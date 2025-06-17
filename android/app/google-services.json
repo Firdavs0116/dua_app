@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "783352570656",
+    "project_id": "dua-app-e1b3b",
+    "storage_bucket": "dua-app-e1b3b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:783352570656:android:695ac2fbf6a1ecc3bf6d45",
+        "android_client_info": {
+          "package_name": "com.example.my_dua_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFKkVt7Odg98sMwfjkR8iHUPvlQXGYQvs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
