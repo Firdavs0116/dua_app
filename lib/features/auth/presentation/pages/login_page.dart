@@ -1,71 +1,131 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:my_dua_app/core/constants/app_colors.dart';
 import 'package:my_dua_app/features/auth/presentation/cubit/auth_cubit.dart';
 import 'package:my_dua_app/features/auth/presentation/cubit/auth_state.dart';
 
-class LoginPage extends StatelessWidget{
-
+class LoginPage extends StatelessWidget {
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
+  final _formkey = GlobalKey<FormState>();
+  final emailRegex = RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$');
 
   LoginPage({super.key});
-
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Login"),
+      backgroundColor: AppColors.backgroundColor,
+      body: Center(
+        child: SingleChildScrollView(
+          padding: EdgeInsets.all(16),
+          child: Form(
+            key: _formkey,
+            autovalidateMode: AutovalidateMode.onUserInteraction,
+            child: Column(
+              children: [
+                Text(
+                  "Welcome back",
+                  style: TextStyle(
+                    fontSize: 28,
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xFF223E7F),
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+                const SizedBox(height: 32),
+
+                TextFormField(
+                  controller: emailController,
+                  decoration: InputDecoration(
+                    labelText: "Email",
+                    filled: true,
+                    fillColor: Colors.white,
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                  ),
+                  validator: (value) {
+                    if (value == null || value.isEmpty) {
+                      return "Enter your Email";
+                    } else if (!emailRegex.hasMatch(value)) {
+                      return "Your Email is wrong. Try to correct";
+                    }
+                    return null;
+                  },
+                ),
+                SizedBox(height: 10),
+                TextFormField(
+                  controller: passwordController,
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    labelText: "Parol",
+                    filled: true,
+                    fillColor: Colors.white,
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                  ),
+                  validator: (value) {
+                    if (value == null || value.isEmpty) {
+                      return "Enter your password";
+                    } else if (value.length < 6) {
+                      return "Invalid password";
+                    }
+                    return null;
+                  },
+                ),
+                SizedBox(height: 32),
+                BlocConsumer<AuthCubit, AuthState>(
+                  builder: (context, state) {
+                    if (state is AuthLoading) {
+                      return Center(child: CircularProgressIndicator());
+                    }
+                    
+                    return ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.blueGrey[300],
+                        foregroundColor: Colors.white,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        minimumSize: Size(200, 50),
+                      ),
+                      onPressed: () {
+                        if (_formkey.currentState!.validate()) {
+                          context.read<AuthCubit>().login(
+                            emailController.text.trim(),
+                            passwordController.text.trim(),
+                          );
+                        }
+                      },
+                      child: Text("Login"),
+                    );
+                  },
+
+                  listener: (context, state) {
+                    if (state is AuthFailure) {
+                      ScaffoldMessenger.of(
+                        context,
+                      ).showSnackBar(SnackBar(content: Text(state.message)));
+                    }
+                    if (state is AuthSuccess) {
+                      Navigator.pushReplacementNamed(context, "/home");
+                    }
+                  },
+                ),
+                // SizedBox(height: 10),
+                TextButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, "/register");
+                  },
+                  child: Text("Ro'yxatdan o'tmaganmisiz? Register"),
+                ),
+              ],
+            ),
+          ),
+        ),
       ),
-      body: Padding(padding: EdgeInsets.all(16),
-      child: BlocConsumer<AuthCubit, AuthState>(
-        listener: (context, state){
-          if(state is AuthFailure){
-            ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(content: Text(state.message)),
-            );
-          }
-          if (state is AuthSuccess){
-            Navigator.pushReplacement(context, "/home" as Route<Object?>);
-          }
-
-        }, 
-        builder: (BuildContext context, AuthState state) {
-          return Column(
-            children: [
-
-              TextField(
-                controller: emailController,
-                decoration: InputDecoration(labelText: "Email"),
-              ),
-
-              TextField(
-                controller: passwordController,
-                decoration: InputDecoration(labelText: "Password"),
-                obscureText: true,
-              ),
-
-              const SizedBox(height: 20,),
-              if(state is AuthLoading)
-              const CircularProgressIndicator()
-
-              else
-              Column(
-                children: [
-                  ElevatedButton(onPressed: (){
-                    context.read<AuthCubit>().login(emailController.text, passwordController.text);
-                  }, child: const Text("Login")),
-                  TextButton(onPressed: (){
-                    context.read<AuthCubit>().register(emailController.text, passwordController.text);
-
-                  }, child: const Text("Register")),
-                ],
-              )
-            ],
-          );
-          },
-      ),),
-      
     );
   }
 }

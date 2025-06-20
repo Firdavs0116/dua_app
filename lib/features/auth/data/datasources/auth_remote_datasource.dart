@@ -1,9 +1,9 @@
 import 'package:firebase_auth/firebase_auth.dart';
 
-class AuthRemoteDatasourse {
+class AuthRemoteDatasource {
   final FirebaseAuth _firebaseAuth;
 
-  AuthRemoteDatasourse(this._firebaseAuth);
+  AuthRemoteDatasource(this._firebaseAuth);
 
   Future<User> login(String email, String password) async{
     final result  = await _firebaseAuth.signInWithEmailAndPassword(email: email, password: password);
