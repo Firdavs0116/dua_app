@@ -4,6 +4,7 @@ import 'package:my_dua_app/core/constants/app_colors.dart';
 import 'package:my_dua_app/features/auth/presentation/cubit/auth_cubit.dart';
 import 'package:my_dua_app/features/auth/presentation/cubit/auth_state.dart';
 import 'package:my_dua_app/features/home/presentation/pages/home_page.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class RegisterPage extends StatefulWidget {
   const RegisterPage({super.key});
@@ -38,7 +39,7 @@ class _RegisterPageState extends State<RegisterPage> {
             child: Column(
               children: [
                 Text(
-                  "Register",
+                  AppLocalizations.of(context)!.register,
                   style: TextStyle(
                     fontSize: 28,
                     fontWeight: FontWeight.bold,
@@ -49,7 +50,7 @@ class _RegisterPageState extends State<RegisterPage> {
                  TextFormField(
                   controller: emailController,
                   decoration: InputDecoration(
-                    labelText: "Email",
+                    labelText: AppLocalizations.of(context)!.email,
                     filled: true,
                     fillColor: Colors.white,
                     border: OutlineInputBorder(
@@ -58,10 +59,10 @@ class _RegisterPageState extends State<RegisterPage> {
                   ),
                   validator: (value) {
                     if (value == null || value.isEmpty){
-                      return "Enter your Email";
+                      return AppLocalizations.of(context)!.enterYourEmail;
                     }
                     else if(!emailRegex.hasMatch(value)){
-                      return "Wrong Email";
+                      return AppLocalizations.of(context)!.wrongEmail;
                     }
                     else{
                       return null;
@@ -72,7 +73,7 @@ class _RegisterPageState extends State<RegisterPage> {
                  TextFormField(
                   controller: passwordController,
                   decoration: InputDecoration(
-                    labelText: "Password",
+                    labelText: AppLocalizations.of(context)!.password,
                     filled: true,
                     fillColor: Colors.white,
                     border: OutlineInputBorder(
@@ -81,10 +82,10 @@ class _RegisterPageState extends State<RegisterPage> {
                   ),
                   validator: (value) {
                     if (value == null || value.isEmpty){
-                      return "Enter your Password";
+                      return AppLocalizations.of(context)!.enterYourPassword;
                     }
                     else if (value.length < 6){
-                      return "password must be at least 6 characters long";
+                      return AppLocalizations.of(context)!.passwordTooShort;
                     }
                     else{
                       return null;
@@ -129,13 +130,15 @@ class _RegisterPageState extends State<RegisterPage> {
                                     passwordController.text.trim(),
                                   );
                             },
-                            child: const Text("Register"),
+                            child: Text(
+                              AppLocalizations.of(context)!.register
+                              ),
                           ),
                         TextButton(
                           onPressed: () {
                             Navigator.pop(context);
                           },
-                          child: const Text("Allaqachon ro'yxatdan o'tganmisiz? Kirish"),
+                          child: Text(AppLocalizations.of(context)!.alreadyRegisteredLogin),
                         ),
                       ],
                     );

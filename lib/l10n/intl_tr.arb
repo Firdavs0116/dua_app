@@ -1,0 +1,22 @@
+{
+  "@@locale": "tr",
+  "homeTitle": "Ana Sayfa",
+  "language": "Dil",
+  "darkMode": "Karanlık Mod",
+  "welcomeMessage": "My Dua Uygulamasına Hoş Geldiniz",
+  "login": "Giriş",
+  "register": "Kayıt Ol",
+  "selectLanguage": "Dil seçin",
+  "enterYourPassword": "Şifrenizi girin",
+  "invalidPassword": "Geçersiz şifre",
+  "email": "E-posta",
+  "welcomeBack": "Tekrar hoş geldiniz",
+  "enterYourEmail": "E-postanızı girin",
+  "wrongEmailTryAgain": "Yanlış e-posta. Lütfen düzeltin",
+  "password": "Şifre",
+  "alreadyRegisteredLogin": "Zaten kayıtlı mısınız? Giriş yapın",
+  "passwordTooShort": "Şifre en az 6 karakter olmalıdır",
+  "wrongEmail": "Yanlış e-posta",
+  "notregistered": "Kayıt olmadınız mı? Kayıt olun"
+
+}

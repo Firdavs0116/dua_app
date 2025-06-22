@@ -1,0 +1,22 @@
+{
+  "@@locale": "uz",
+  "homeTitle": "Bosh sahifa",
+  "language": "Til",
+  "darkMode": "Tungi rejim",
+  "welcomeMessage": "My Dua ilovasiga xush kelibsiz",
+  "login": "Kirish",
+  "register": "Ro'yxatdan o'tish",
+  "selectLanguage": "Tilni tanlang",
+  "enterYourPassword": "Parolingizni kiriting",
+  "invalidPassword": "Noto‘g‘ri parol",
+  "email": "Elektron pochta",
+  "welcomeBack": "Yana xush kelibsiz",
+  "enterYourEmail": "Email kiriting",
+  "wrongEmailTryAgain": "Elektron pochta noto‘g‘ri. Iltimos, to‘g‘rilang",
+  "password": "Parol",
+  "alreadyRegisteredLogin": "Ro‘yxatdan o‘tganmisiz? Kirish",
+  "passwordTooShort": "Parol kamida 6 ta belgidan iborat bo‘lishi kerak",
+  "wrongEmail": "Noto‘g‘ri email",
+  "notregistered": "Ro‘yxatdan o‘tmaganmisiz? Ro‘yxatdan o‘ting"
+
+}

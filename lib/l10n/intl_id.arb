@@ -1,0 +1,22 @@
+{
+  "@@locale": "id",
+  "homeTitle": "Beranda",
+  "language": "Bahasa",
+  "darkMode": "Mode Gelap",
+  "welcomeMessage": "Selamat datang di My Dua App",
+  "login": "Masuk",
+  "register": "Daftar",
+  "selectLanguage": "Pilih bahasa",
+  "enterYourPassword": "Masukkan kata sandi Anda",
+  "invalidPassword": "Kata sandi salah",
+  "email": "Email",
+  "welcomeBack": "Selamat datang kembali",
+  "enterYourEmail": "Masukkan email Anda",
+  "wrongEmailTryAgain": "Email salah. Coba koreksi",
+  "password": "Kata sandi",
+  "alreadyRegisteredLogin": "Sudah terdaftar? Masuk",
+  "passwordTooShort": "Kata sandi minimal harus 6 karakter",
+  "wrongEmail": "Email salah",
+  "notregistered": "Belum terdaftar? Daftar sekarang"
+
+}

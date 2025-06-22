@@ -1,0 +1,22 @@
+{
+  "@@locale": "ja",
+  "homeTitle": "ホーム",
+  "language": "言語",
+  "darkMode": "ダークモード",
+  "welcomeMessage": "My Duaアプリへようこそ",
+  "login": "ログイン",
+  "register": "登録",
+  "selectLanguage": "言語を選択してください",
+  "enterYourPassword": "パスワードを入力してください",
+  "invalidPassword": "無効なパスワード",
+  "email": "メール",
+  "welcomeBack": "お帰りなさい",
+  "enterYourEmail": "メールを入力してください",
+  "wrongEmailTryAgain": "メールアドレスが間違っています。修正してください",
+  "password": "パスワード",
+  "alreadyRegisteredLogin": "すでに登録していますか？ ログイン",
+  "passwordTooShort": "パスワードは6文字以上である必要があります",
+  "wrongEmail": "間違ったメール",
+  "notregistered": "未登録ですか？ 登録する"
+
+}

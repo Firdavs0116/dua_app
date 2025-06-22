@@ -1,0 +1,22 @@
+{
+  "@@locale": "de",
+  "homeTitle": "Startseite",
+  "language": "Sprache",
+  "darkMode": "Dunkler Modus",
+  "welcomeMessage": "Willkommen bei My Dua App",
+  "login": "Anmelden",
+  "register": "Registrieren",
+  "selectLanguage": "Sprache auswählen",
+  "enterYourPassword": "Geben Sie Ihr Passwort ein",
+  "invalidPassword": "Ungültiges Passwort",
+  "email": "E-Mail",
+  "welcomeBack": "Willkommen zurück",
+  "enterYourEmail": "Geben Sie Ihre E-Mail ein",
+  "wrongEmailTryAgain": "Falsche E-Mail. Bitte korrigieren",
+  "password": "Passwort",
+  "alreadyRegisteredLogin": "Bereits registriert? Anmelden",
+  "passwordTooShort": "Das Passwort muss mindestens 6 Zeichen lang sein",
+  "wrongEmail": "Falsche E-Mail",
+  "notregistered": "Noch nicht registriert? Registrieren"
+
+}
