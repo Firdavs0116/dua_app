@@ -17,6 +17,18 @@
   "alreadyRegisteredLogin": "Ro‘yxatdan o‘tganmisiz? Kirish",
   "passwordTooShort": "Parol kamida 6 ta belgidan iborat bo‘lishi kerak",
   "wrongEmail": "Noto‘g‘ri email",
-  "notregistered": "Ro‘yxatdan o‘tmaganmisiz? Ro‘yxatdan o‘ting"
-
+  "notregistered": "Ro‘yxatdan o‘tmaganmisiz? Ro‘yxatdan o‘ting",
+  "forgotPassword": "Parolingizni unutdingizmi?",
+  "passwordRecovery": "Parolni qayta tiklash",
+  "confirmPassword": "Parolni tasdiqlang",
+  "passwordsDoNotMatch": "Parollar mos emas",
+  "resetLinkSent": "Parolni tiklash havolasi yuborildi",
+  "enterValidEmail": "Yaroqli elektron pochta kiriting",
+  "signOut": "Chiqish",
+  "loading": "Yuklanmoqda...",
+  "submit": "Yuborish",
+  "meaning": "Ma'nosi",
+  "explanation": "Tafsiri",
+  "reference": "Manba",
+  "playAudio": "Audioni ijro etish"
 }

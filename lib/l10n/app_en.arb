@@ -17,5 +17,20 @@
   "alreadyRegisteredLogin": "Already registered? Login",
   "passwordTooShort": "Password must be at least 6 characters long",
   "wrongEmail": "Wrong Email",
-  "notregistered": "Not registered? Register"
+  "notregistered": "Not registered? Register",
+  "forgotPassword": "Forgot your password?",
+  "passwordRecovery": "Password Recovery",
+  "confirmPassword": "Confirm password",
+  "passwordsDoNotMatch": "Passwords do not match",
+  "resetLinkSent": "Password reset link sent",
+  "enterValidEmail": "Enter a valid email",
+  "signOut": "Sign out",
+  "loading": "Loading...",
+  "submit": "Submit",
+
+  "meaning": "Ma'nosi",
+"explanation": "Tafsiri",
+"reference": "Manba",
+"playAudio": "Audioni ijro etish"
+
 }

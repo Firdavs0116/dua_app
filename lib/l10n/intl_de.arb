@@ -6,7 +6,7 @@
   "welcomeMessage": "Willkommen bei My Dua App",
   "login": "Anmelden",
   "register": "Registrieren",
-  "selectLanguage": "Sprache auswählen",
+  "selectLanguage": "Sprache wählen",
   "enterYourPassword": "Geben Sie Ihr Passwort ein",
   "invalidPassword": "Ungültiges Passwort",
   "email": "E-Mail",
@@ -15,8 +15,16 @@
   "wrongEmailTryAgain": "Falsche E-Mail. Bitte korrigieren",
   "password": "Passwort",
   "alreadyRegisteredLogin": "Bereits registriert? Anmelden",
-  "passwordTooShort": "Das Passwort muss mindestens 6 Zeichen lang sein",
+  "passwordTooShort": "Passwort muss mindestens 6 Zeichen lang sein",
   "wrongEmail": "Falsche E-Mail",
-  "notregistered": "Noch nicht registriert? Registrieren"
-
+  "notregistered": "Nicht registriert? Registrieren",
+  "forgotPassword": "Passwort vergessen?",
+  "passwordRecovery": "Passwort-Wiederherstellung",
+  "confirmPassword": "Passwort bestätigen",
+  "passwordsDoNotMatch": "Passwörter stimmen nicht überein",
+  "resetLinkSent": "Link zum Zurücksetzen gesendet",
+  "enterValidEmail": "Gültige E-Mail eingeben",
+  "signOut": "Abmelden",
+  "loading": "Lädt...",
+  "submit": "Absenden"
 }

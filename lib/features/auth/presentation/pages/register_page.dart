@@ -5,9 +5,14 @@ import 'package:my_dua_app/features/auth/presentation/cubit/auth_cubit.dart';
 import 'package:my_dua_app/features/auth/presentation/cubit/auth_state.dart';
 import 'package:my_dua_app/features/home/presentation/pages/home_page.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:my_dua_app/features/language/presentation/widgets/language_selector_with_flags.dart';
 
 class RegisterPage extends StatefulWidget {
-  const RegisterPage({super.key});
+  final void Function(Locale locale) onLocaleChange;
+  final void Function(bool) onThemeToggle;
+  const RegisterPage({super.key, 
+  required this.onLocaleChange, 
+  required this.onThemeToggle});
 
   @override
   State<RegisterPage> createState() => _RegisterPageState();
@@ -19,6 +24,10 @@ class _RegisterPageState extends State<RegisterPage> {
     final _formkey = GlobalKey<FormState>();
   final emailRegex = RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$');
 
+  
+
+
+
   @override
   void dispose() {
     emailController.dispose();
@@ -29,6 +38,14 @@ class _RegisterPageState extends State<RegisterPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: AppColors.backgroundColor,
+        actions: [
+          Padding(padding: EdgeInsets.symmetric(horizontal: 10),
+          child: LanguageSelectorWithFlags(onLocaleChanged: widget.onLocaleChange),),
+          
+        ],
+      ),
       backgroundColor: AppColors.backgroundColor,
       body: Center(
         child: SingleChildScrollView(

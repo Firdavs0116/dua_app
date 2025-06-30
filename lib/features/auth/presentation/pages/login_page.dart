@@ -4,18 +4,38 @@ import 'package:my_dua_app/core/constants/app_colors.dart';
 import 'package:my_dua_app/features/auth/presentation/cubit/auth_cubit.dart';
 import 'package:my_dua_app/features/auth/presentation/cubit/auth_state.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:my_dua_app/features/auth/presentation/pages/forgot_password.dart';
+import 'package:my_dua_app/features/auth/presentation/pages/register_page.dart';
+import 'package:my_dua_app/features/language/presentation/widgets/language_selector_with_flags.dart';
 
 class LoginPage extends StatelessWidget {
+  final void Function(Locale locale) onLocaleChange;
+  final void Function(bool value) onThemeToggle;
+
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
   final _formkey = GlobalKey<FormState>();
   final emailRegex = RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$');
 
-  LoginPage({super.key, required void Function(Locale locale) onLocaleChange, required void Function(bool value) onThemeToggle});
+  LoginPage({
+    super.key,
+    required this.onLocaleChange,
+    required this.onThemeToggle,
+  });
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: AppColors.backgroundColor,
+        // title: Text(AppLocalizations.of(context)!.login),
+        actions: [
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 10),
+            child: LanguageSelectorWithFlags(onLocaleChanged: onLocaleChange),
+          ),
+        ],
+      ),
       backgroundColor: AppColors.backgroundColor,
       body: Center(
         child: SingleChildScrollView(
@@ -39,7 +59,7 @@ class LoginPage extends StatelessWidget {
                 TextFormField(
                   controller: emailController,
                   decoration: InputDecoration(
-                    labelText: AppLocalizations.of(context)!.email,
+                    labelText: AppLocalizations.of(context)!.email, // Email
                     filled: true,
                     fillColor: Colors.white,
                     border: OutlineInputBorder(
@@ -48,9 +68,13 @@ class LoginPage extends StatelessWidget {
                   ),
                   validator: (value) {
                     if (value == null || value.isEmpty) {
-                      return AppLocalizations.of(context)!.enterYourEmail;
+                      return AppLocalizations.of(
+                        context,
+                      )!.enterYourEmail; // Enter your email address
                     } else if (!emailRegex.hasMatch(value)) {
-                      return AppLocalizations.of(context)!.wrongEmailTryAgain;
+                      return AppLocalizations.of(
+                        context,
+                      )!.wrongEmailTryAgain; // Wrong Email address
                     }
                     return null;
                   },
@@ -60,7 +84,8 @@ class LoginPage extends StatelessWidget {
                   controller: passwordController,
                   obscureText: true,
                   decoration: InputDecoration(
-                    labelText: AppLocalizations.of(context)!.password,
+                    labelText:
+                        AppLocalizations.of(context)!.password, // Password
                     filled: true,
                     fillColor: Colors.white,
                     border: OutlineInputBorder(
@@ -69,9 +94,13 @@ class LoginPage extends StatelessWidget {
                   ),
                   validator: (value) {
                     if (value == null || value.isEmpty) {
-                      return AppLocalizations.of(context)!.enterYourPassword;
+                      return AppLocalizations.of(
+                        context,
+                      )!.enterYourPassword; // Enter your password
                     } else if (value.length < 6) {
-                      return AppLocalizations.of(context)!.invalidPassword;
+                      return AppLocalizations.of(
+                        context,
+                      )!.invalidPassword; // Wrong password
                     }
                     return null;
                   },
@@ -82,7 +111,7 @@ class LoginPage extends StatelessWidget {
                     if (state is AuthLoading) {
                       return Center(child: CircularProgressIndicator());
                     }
-                    
+
                     return ElevatedButton(
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.blueGrey[300],
@@ -101,7 +130,7 @@ class LoginPage extends StatelessWidget {
                         }
                       },
                       child: Text(
-                        AppLocalizations.of(context)!.login
+                        AppLocalizations.of(context)!.login, // Login
                       ),
                     );
                   },
@@ -120,11 +149,25 @@ class LoginPage extends StatelessWidget {
                 // SizedBox(height: 10),
                 TextButton(
                   onPressed: () {
-                    Navigator.pushNamed(context, "/register");
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder:
+                            (_) => RegisterPage(
+                              onLocaleChange: onLocaleChange,
+                              onThemeToggle: onThemeToggle,
+                            ),
+                      ),
+                    );
                   },
-                  child: Text(
-                    AppLocalizations.of(context)!.notregistered
-                  ),
+                  child: Text(AppLocalizations.of(context)!.notregistered),
+                ),
+
+                TextButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (_) => ForgotPasswordPage()));
+                  },
+                  child: Text(AppLocalizations.of(context)!.forgotPassword),
                 ),
               ],
             ),

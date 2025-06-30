@@ -1,8 +1,11 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:my_dua_app/features/auth/presentation/pages/forgot_password.dart';
+import 'package:my_dua_app/features/dua/ui/pages/dua_list_page.dart';
 import 'package:my_dua_app/features/language/presentation/ui/language_selector_page.dart';
 
 import 'firebase_options.dart';
@@ -31,6 +34,8 @@ class _MyAppState extends State<MyApp> {
   Locale? _locale;
   bool _isDarkMode = false;
   bool _isLanguageChosen = false;
+  String? _initialRoute;
+
 
   void setLocale(Locale locale) {
     setState(() {
@@ -43,6 +48,17 @@ class _MyAppState extends State<MyApp> {
     setState(() {
       _isDarkMode = value;
     });
+  }
+
+  void checkUserLoggedIn(){
+    final user = FirebaseAuth.instance.currentUser;
+    if (user != null){
+      _isLanguageChosen = true;
+      _initialRoute = '/home';
+    }
+    else{
+      _initialRoute = null;
+    }
   }
 
   @override
@@ -68,15 +84,17 @@ class _MyAppState extends State<MyApp> {
             theme: ThemeData.light(),
             darkTheme: ThemeData.dark(),
             themeMode: _isDarkMode ? ThemeMode.dark : ThemeMode.light,
-            home: !_isLanguageChosen
+            home: _initialRoute == '/home'
+            ? const HomePage() 
+            : !_isLanguageChosen
                 ? LanguageSelectorPage(onLocaleChange: setLocale)
                 : LoginPage(
                     onLocaleChange: setLocale,
                     onThemeToggle: toggleTheme,
                   ),
             routes: {
-              '/register': (_) => const RegisterPage(),
               '/home': (_) => const HomePage(),
+              '/dua': (_) =>  DuaListPage(),
             },
           );
         },

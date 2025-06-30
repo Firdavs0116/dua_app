@@ -1,5 +1,11 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:get_it/get_it.dart';
+import 'package:my_dua_app/features/dua/data/datasources/dua_remote_datasource.dart';
+import 'package:my_dua_app/features/dua/data/repositories/dua_repository_impl.dart';
+import 'package:my_dua_app/features/dua/domain/repository/dua_repository.dart';
+import 'package:my_dua_app/features/dua/domain/usecases/get_duas_usecase.dart';
+import 'package:my_dua_app/features/dua/ui/cubit/dua_cubit.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'package:my_dua_app/features/auth/data/datasources/auth_remote_datasource.dart';
@@ -16,12 +22,12 @@ import 'package:my_dua_app/features/language/domain/repositories/locale_reposito
 import 'package:my_dua_app/features/language/domain/usecases/get_locale_usecase.dart';
 import 'package:my_dua_app/features/language/domain/usecases/set_locale_usecase.dart';
 import 'package:my_dua_app/features/language/presentation/cubit/locale_cubit.dart';
-
 final sl = GetIt.instance;
 
 Future<void> init() async {
   // Firebase
   sl.registerLazySingleton(() => FirebaseAuth.instance);
+  sl.registerLazySingleton(() => FirebaseFirestore.instance); // 🔴 YANGI
 
   // SharedPreferences
   final sharedPreferences = await SharedPreferences.getInstance();
@@ -46,4 +52,12 @@ Future<void> init() async {
         getUsecase: sl(),
         setlocale: sl(),
       ));
+
+  // Dua
+  sl.registerLazySingleton<DuaRemoteDataSource>(
+      () => DuaRemoteDataSourceImpl(firestore: sl()));
+  sl.registerLazySingleton<DuaRepository>(
+      () => DuaRepositoryImpl(remoteDataSource: sl()));
+  sl.registerLazySingleton(() => GetDuasUsecase(sl()));
+  sl.registerFactory(() => DuaCubit(getDuasUsecase: sl()));
 }
