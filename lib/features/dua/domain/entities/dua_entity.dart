@@ -28,7 +28,7 @@ class Translation {
     required this.reference,
   });
 
-  // 🔧 Firestore'ga yozish uchun kerakli metod
+  //Firestorega yozish uchun kerakli metod
   Map<String, dynamic> toJson() => {
         'title': title,
         'meaning': meaning,

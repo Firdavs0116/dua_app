@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:my_dua_app/core/constants/app_colors.dart';
 import 'package:my_dua_app/features/dua/domain/entities/dua_entity.dart';
 
 class DuaDetailsPage extends StatelessWidget {
@@ -10,7 +11,7 @@ class DuaDetailsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final localeCode = Localizations.localeOf(context).languageCode;
-
+    print("dua details page ga kirdi");
     final translation = dua.translations[localeCode] ?? dua.translations['en'];
     final title = translation?.title ?? '';
     final meaning = translation?.meaning ?? '';
@@ -19,14 +20,13 @@ class DuaDetailsPage extends StatelessWidget {
     final category = dua.category[localeCode] ?? '';
 
     print("Current locale: $localeCode");
-print("Title: ${translation?.title}");
-print("Explanation: ${translation?.explanation}");
-
+    print("Title: ${translation?.title}");
+    print("Explanation: ${translation?.explanation}");
 
     return Scaffold(
-      appBar: AppBar(
-        title: Text(title),
-      ),
+      backgroundColor: AppColors.backgroundColor,
+      appBar: AppBar(title: Text(title),
+      backgroundColor: AppColors.backgroundColor,),
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: SingleChildScrollView(
@@ -38,7 +38,11 @@ print("Explanation: ${translation?.explanation}");
 
               Text(
                 dua.arabic,
-                style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold, height: 2),
+                style: const TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                  height: 2,
+                ),
                 textAlign: TextAlign.right,
                 textDirection: TextDirection.rtl,
               ),
@@ -54,7 +58,7 @@ print("Explanation: ${translation?.explanation}");
                 AppLocalizations.of(context)!.meaning,
                 style: const TextStyle(fontWeight: FontWeight.bold),
               ),
-              Text(translation?.meaning ?? " ma'nosi"),
+              Text(meaning),
               const SizedBox(height: 12),
 
               Text(
@@ -71,7 +75,7 @@ print("Explanation: ${translation?.explanation}");
 
               Text(reference),
               const SizedBox(height: 24),
-              Text("Nimadur"),
+              // Text("Nimadur"),
               ElevatedButton(
                 onPressed: () {
                   // TODO: implement audio playback

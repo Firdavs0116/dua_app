@@ -36,7 +36,7 @@ class LanguageSelector  extends StatelessWidget{
           child: Text("France")
           ),
           DropdownMenuItem(
-          value: "kr",
+          value: "ko",
           child: Text("Korean")
           ),
           DropdownMenuItem(

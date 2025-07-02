@@ -28,7 +28,7 @@ class LanguageSelectorWithFlags extends StatelessWidget {
     final screenWidth = MediaQuery.of(context).size.width;
 
     return SizedBox(
-      width: screenWidth * 0.3, // AppBar uchun mos width
+      width: screenWidth * 0.3,
       child: DropdownButtonHideUnderline(
         child: DropdownButton<String>(
           isExpanded: true,

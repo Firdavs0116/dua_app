@@ -1,18 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:my_dua_app/core/constants/app_colors.dart';
 import 'package:my_dua_app/features/dua/ui/cubit/dua_cubit.dart';
 import 'package:my_dua_app/features/dua/ui/pages/dua_details.dart';
 import 'package:my_dua_app/injection/service_locator.dart';
 
 class DuaListPage extends StatelessWidget {
+  const DuaListPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     final locale = Localizations.localeOf(context).languageCode;
-
+    print("duo page ga kirdi");
     return BlocProvider(
       create: (_) => sl<DuaCubit>()..fetchDuas(),
       child: Scaffold(
-        appBar: AppBar(title: Text("Duo ro'yxati")),
+        backgroundColor: AppColors.backgroundColor,
+        appBar: AppBar(title: Text("Duo ro'yxati"),
+        backgroundColor: AppColors.backgroundColor,),
         body: BlocBuilder<DuaCubit, DuaState>(
           builder: (context, state) {
             if (state is DuaLoading) {
@@ -29,7 +34,8 @@ class DuaListPage extends StatelessWidget {
                   final category = dua.category[locale] ?? '';
 
                   return Card(
-                    margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                    color: Colors.white,
+                    margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                     elevation: 3,
                     child: ListTile(
@@ -87,7 +93,6 @@ class DuaListPage extends StatelessWidget {
                 },
               );
             }
-
             if (state is DuaError) {
               return Center(child: Text(state.message));
             }
