@@ -47,6 +47,14 @@ class LanguageSelector  extends StatelessWidget{
           value: "ru",
           child: Text("Russian")
           ),
+          DropdownMenuItem(
+          value: "kg",
+          child: Text("Қырғыз")
+          ),
+          DropdownMenuItem(
+          value: "kz",
+          child: Text("Қазақша")
+          ),
           
       ], 
       onChanged: (value){

@@ -30,5 +30,13 @@
   "meaning": "Ma'nosi",
   "explanation": "Tafsiri",
   "reference": "Manba",
-  "playAudio": "Audioni ijro etish"
+  "playAudio": "Audioni ijro etish",
+  "duas": "Duolar",
+  "zikrs": "zikrlar",
+  "readMore" : "ko'proq",
+  "goToDua": "Duolarga o'tish",
+  "goToZikr": "Zikrlarga o'tish",
+  "tasbeeh": "Tasbeh",
+  "goToTasbeeh": "Tasbehga o'tish",
+  "search": "Qidirish"
 }

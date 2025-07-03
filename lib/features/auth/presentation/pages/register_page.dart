@@ -121,7 +121,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     if (state is AuthSuccess) {
                       Navigator.pushReplacement(
                         context,
-                        MaterialPageRoute(builder: (_) => HomePage()),
+                        MaterialPageRoute(builder: (_) => HomePage(onLocaleChange: (Locale p1) {  }, onThemeToggle: (_) {  },)),
                       );
                     }
                   },

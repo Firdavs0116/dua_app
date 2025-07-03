@@ -1,0 +1,195 @@
+[
+    {
+      "id": "enter_mosque",
+      "arabic": "اللَّهُمَّ افْتَحْ لِي أَبْوَابَ رَحْمَتِكَ",
+      "transliteration": "Allahummaf-tah lii abwaaba rahmatik",
+      "categoryId": "mosque",
+      "reference": "HR. Muslim",
+      "translations": {
+        "en": {
+          "title": "Entering the mosque",
+          "meaning": "O Allah, open the doors of Your mercy for me.",
+          "explanation": "Said when entering the mosque."
+        },
+        "uz": {
+          "title": "Masjidga kirishda",
+          "meaning": "Ey Allohim, rahmating eshiklarini menga ochgin.",
+          "explanation": "Masjidga kirishda aytiladi."
+        },
+        "ru": {
+          "title": "Вход в мечеть",
+          "meaning": "О Аллах, открой мне двери Своей милости.",
+          "explanation": "Читается при входе в мечеть."
+        },
+        "id": {
+          "title": "Masuk Masjid",
+          "meaning": "Ya Allah, bukakanlah pintu rahmat-Mu untukku.",
+          "explanation": "Dibaca saat masuk masjid."
+        },
+        "fr": {
+          "title": "Entrée à la mosquée",
+          "meaning": "Ô Allah, ouvre-moi les portes de Ta miséricorde.",
+          "explanation": "À réciter en entrant dans la mosquée."
+        },
+        "de": {
+          "title": "Betreten der Moschee",
+          "meaning": "O Allah, öffne mir die Türen Deiner Barmherzigkeit.",
+          "explanation": "Beim Betreten der Moschee zu sagen."
+        },
+        "ko": {
+          "title": "모스크에 들어갈 때",
+          "meaning": "오 알라, 나에게 자비의 문을 열어주소서.",
+          "explanation": "모스크에 들어갈 때 읽습니다."
+        },
+        "ja": {
+          "title": "モスクに入るとき",
+          "meaning": "アッラーよ、あなたの慈悲の門を私に開いてください。",
+          "explanation": "モスクに入るときに唱える。"
+        },
+        "tr": {
+          "title": "Camiye girerken",
+          "meaning": "Allah’ım, rahmet kapılarını bana aç.",
+          "explanation": "Camiye girerken okunur."
+        },
+        "kz": {
+          "title": "Мешітке кіру",
+          "meaning": "Уа, Алла, маған рақым есіктеріңді аш.",
+          "explanation": "Мешітке кіргенде оқылады."
+        },
+        "kg": {
+          "title": "Мечитке кирүү",
+          "meaning": "Оо, Аллах, мени ырайымыңдын эшиктерин ач.",
+          "explanation": "Мечитке кирүүдө айтылат."
+        }
+      }
+    },
+    {
+      "id": "leaving_mosque",
+      "arabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ فَضْلِكَ",
+      "transliteration": "Allahumma inni as'aluka min fadhlik",
+      "categoryId": "mosque",
+      "reference": "HR. Muslim",
+      "translations": {
+        "en": {
+          "title": "Leaving the mosque",
+          "meaning": "O Allah, I ask You for Your bounty.",
+          "explanation": "Said when leaving the mosque."
+        },
+        "uz": {
+          "title": "Masjiddan chiqishda",
+          "meaning": "Ey Alloh, Sendan fazlingni so‘rayman.",
+          "explanation": "Masjiddan chiqishda aytiladi."
+        },
+        "ru": {
+          "title": "Выход из мечети",
+          "meaning": "О Аллах, прошу Тебя о Твоей милости.",
+          "explanation": "Читается при выходе из мечети."
+        },
+        "id": {
+          "title": "Keluar dari masjid",
+          "meaning": "Ya Allah, aku memohon karunia-Mu.",
+          "explanation": "Dibaca saat keluar dari masjid."
+        },
+        "fr": {
+          "title": "Sortir de la mosquée",
+          "meaning": "Ô Allah, je Te demande Ta grâce.",
+          "explanation": "À réciter en quittant la mosquée."
+        },
+        "de": {
+          "title": "Moschee verlassen",
+          "meaning": "O Allah, ich bitte Dich um Deine Gunst.",
+          "explanation": "Beim Verlassen der Moschee zu sagen."
+        },
+        "ko": {
+          "title": "모스크에서 나올 때",
+          "meaning": "오 알라, 당신의 은총을 구합니다.",
+          "explanation": "모스크를 나올 때 읽습니다."
+        },
+        "ja": {
+          "title": "モスクを出るとき",
+          "meaning": "アッラーよ、あなたの恵みを求めます。",
+          "explanation": "モスクを出るときに唱える。"
+        },
+        "tr": {
+          "title": "Cami çıkışı",
+          "meaning": "Allah’ım, Senin lütfunu istiyorum.",
+          "explanation": "Cami çıkışında okunur."
+        },
+        "kz": {
+          "title": "Мешіттен шығу",
+          "meaning": "Уа, Алла, Сенің рақымыңды сұраймын.",
+          "explanation": "Мешіттен шыққанда оқылады."
+        },
+        "kg": {
+          "title": "Мечиттен чыгууда",
+          "meaning": "Оо, Аллах, Сенин берекеңди сурайм.",
+          "explanation": "Мечиттен чыкканда айтылат."
+        }
+      }
+    },
+    {
+      "id": "after_sneeze",
+      "arabic": "الْحَمْدُ للهِ",
+      "transliteration": "Alhamdulillah",
+      "categoryId": "daily",
+      "reference": "HR. Bukhari",
+      "translations": {
+        "en": {
+          "title": "After sneezing",
+          "meaning": "All praise is due to Allah.",
+          "explanation": "Said after sneezing."
+        },
+        "uz": {
+          "title": "Aqsirgandan keyin",
+          "meaning": "Barcha hamdlar Allohgadir.",
+          "explanation": "Aqsirgandan so‘ng aytiladi."
+        },
+        "ru": {
+          "title": "После чихания",
+          "meaning": "Хвала Аллаху.",
+          "explanation": "Говорится после чихания."
+        },
+        "id": {
+          "title": "Setelah bersin",
+          "meaning": "Segala puji bagi Allah.",
+          "explanation": "Diucapkan setelah bersin."
+        },
+        "fr": {
+          "title": "Après avoir éternué",
+          "meaning": "Louange à Allah.",
+          "explanation": "À dire après avoir éternué."
+        },
+        "de": {
+          "title": "Nach dem Niesen",
+          "meaning": "Alles Lob gebührt Allah.",
+          "explanation": "Nach dem Niesen gesagt."
+        },
+        "ko": {
+          "title": "재채기 후",
+          "meaning": "모든 찬양은 알라에게 속합니다.",
+          "explanation": "재채기 후에 읽습니다."
+        },
+        "ja": {
+          "title": "くしゃみの後",
+          "meaning": "すべての称賛はアッラーに属します。",
+          "explanation": "くしゃみの後に唱える。"
+        },
+        "tr": {
+          "title": "Hapşırmadan sonra",
+          "meaning": "Hamd Allah’a aittir.",
+          "explanation": "Hapşırdıktan sonra söylenir."
+        },
+        "kz": {
+          "title": "Түшкіргеннен кейін",
+          "meaning": "Бар мадақ Аллаға тән.",
+          "explanation": "Түшкірген соң айтылады."
+        },
+        "kg": {
+          "title": "Чүчкүргөндөн кийин",
+          "meaning": "Баардык мактоо Аллага таандык.",
+          "explanation": "Чүчкүргөндөн кийин айтылат."
+        }
+      }
+    }
+  ]
+  

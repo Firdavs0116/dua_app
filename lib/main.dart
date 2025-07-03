@@ -6,6 +6,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:my_dua_app/core/utils/upload_duas.dart';
+import 'package:my_dua_app/core/utils/upload_zikrs.dart';
 import 'package:my_dua_app/features/auth/presentation/pages/splashscreen.dart';
 import 'package:my_dua_app/features/dua/ui/pages/dua_list_page.dart';
 import 'package:my_dua_app/features/language/presentation/ui/language_selector_page.dart';
@@ -51,6 +53,13 @@ class _MyAppState extends State<MyApp> {
       _isDarkMode = value;
     });
   }
+  @override
+void initState() {
+  super.initState();
+  // uploadDuasFromJson(); buni har safar run qilganda qaytadan yuklab qo'yadi
+  uploadZikrsfromJson();
+}
+
 
   @override
   Widget build(BuildContext context) {
@@ -82,7 +91,7 @@ class _MyAppState extends State<MyApp> {
                     onThemeToggle: toggleTheme,
                   ),
             routes: {
-              '/home': (_) => const HomePage(),
+              '/home': (_) => HomePage(onLocaleChange: (Locale p1) {  }, onThemeToggle: (_) {  },),
               '/dua': (_) => DuaListPage(),
             },
           );

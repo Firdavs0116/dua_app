@@ -34,7 +34,7 @@ class _SplashPageState extends State<SplashPage> {
     if (user != null && hasLoggedIn) {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (_) => const HomePage()),
+        MaterialPageRoute(builder: (_) => HomePage(onLocaleChange: (Locale p1) {  }, onThemeToggle: (_) {  },)),
       );
     } else {
       Navigator.pushReplacement(

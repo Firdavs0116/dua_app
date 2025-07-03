@@ -20,6 +20,8 @@ class LanguageSelectorWithFlags extends StatelessWidget {
     {'code': 'id', 'name': 'Indonesia', 'flag': 'id.png'},
     {'code': 'ja', 'name': '日本語', 'flag': 'jp.png'},
     {'code': 'ko', 'name': '한국어', 'flag': 'kr.png'},
+    {'code': 'kk', 'name': 'Қазақ', 'flag': 'kz.png'},
+    {'code': 'ky', 'name': 'Қырғыз', 'flag': 'kg.png'},
   ];
 
   @override

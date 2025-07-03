@@ -1,0 +1,216 @@
+[
+    {
+      "id": "forgive_parents",
+      "translations": {
+        "en": {
+          "title": "Forgiveness for Parents",
+          "meaning": "O my Lord, forgive me and my parents, have mercy on them as they had mercy on me when I was little.",
+          "explanation": "A child's prayer for both parents.",
+          "reference": "-"
+        },
+        "fr": {
+          "title": "Pardon pour les parents",
+          "meaning": "Ô mon Seigneur, pardonne-moi, ainsi qu'à mes parents, et fais-leur miséricorde comme ils ont eu pitié de moi quand j'étais petit.",
+          "explanation": "Prière d'un enfant pour ses deux parents.",
+          "reference": "-"
+        },
+        "de": {
+          "title": "Vergebung für die Eltern",
+          "meaning": "O mein Herr, vergib mir und meinen Eltern und erbarme dich ihrer, wie sie sich meiner erbarmt haben, als ich klein war.",
+          "explanation": "Ein Kind betet für beide Eltern.",
+          "reference": "-"
+        },
+        "id": {
+          "title": "Pengampunan untuk Orang Tua",
+          "meaning": "Ya Tuhanku, ampunilah aku dan kedua orang tuaku, rahmatilah mereka sebagaimana mereka merahmatiku saat aku kecil.",
+          "explanation": "Doa seorang anak untuk kedua orang tuanya.",
+          "reference": "-"
+        },
+        "ja": {
+          "title": "両親の許しの祈り",
+          "meaning": "おお主よ、私と両親をお許しください。かれらが幼い私に慈しみを注いでくれたように、かれらを憐れんでください。",
+          "explanation": "子供が両親に捧げる祈り。",
+          "reference": "-"
+        },
+        "ko": {
+          "title": "부모를 위한 용서의 기도",
+          "meaning": "오 나의 주님, 저와 저의 부모님을 용서하시고, 어렸을 때 저를 불쌍히 여겼듯이 그들에게 자비를 베푸소서.",
+          "explanation": "아이의 부모를 위한 기도입니다.",
+          "reference": "-"
+        },
+        "tr": {
+          "title": "Anne-Babaya Affedilme Duası",
+          "meaning": "Ey Rabbim, beni ve anne-babamı affet, onlar beni küçükken merhamet ettikleri gibi onlara da merhamet et.",
+          "explanation": "Bir çocuğun her iki ebeveyni için duası.",
+          "reference": "-"
+        },
+        "uz": {
+          "title": "Ota-onaga magʻfirat soʻrash",
+          "meaning": "Ey Rabbim, meni va ota-onamni magʻfirat qilgin, ular meni yoshligimda tarbiyalaganlaridek ularga rahm qilgin.",
+          "explanation": "Farzandning ota-onasiga qilgan duosi.",
+          "reference": "-"
+        },
+        "kz": {
+          "title": "Ата-ананы кешіру дұғасы",
+          "meaning": "Әй Раббым, мені және ата-анамды кешір, олар мені бала кезде кешіргендей, оларға да мейірім ет.",
+          "explanation": "Баланың ата-анасына жасаған дұғасы.",
+          "reference": "-"
+        },
+        "kg": {
+          "title": "Ата-энеге кечирим тилегич дуо",
+          "meaning": "Эй Падышам, мени жана ата-энемди кечиргин, алар мени кичинекей кезимде кечиргендей, аларга да мээрим кыл.",
+          "explanation": "Баланын ата-энесине кылган дуосу.",
+          "reference": "-"
+        },
+        "ru": {
+          "title": "Прощение для родителей",
+          "meaning": "О, мой Господь, прости меня и моих родителей, помилуй их, как они помиловали меня в детстве.",
+          "explanation": "Молитва ребёнка за обоих родителей.",
+          "reference": "-"
+        }
+      }
+    },
+    {
+      "id": "hasanah_prayer",
+      "translations": {
+        "en": {
+          "title": "Goodness in this life and the next",
+          "meaning": "Our Lord, give us goodness in this world and the hereafter, and protect us from the torment of hell.",
+          "explanation": "Prayer asks for salvation in the dunya and the akhirah.",
+          "reference": "-"
+        },
+        "fr": {
+          "title": "Bonté pour ce monde et l'au-delà",
+          "meaning": "Notre Seigneur, accorde-nous la bonté dans ce monde ici-bas et dans l'au-delà, et protège-nous du châtiment du feu.",
+          "explanation": "Prière pour la réussite dans la vie et l'au-delà.",
+          "reference": "-"
+        },
+        "de": {
+          "title": "Güte in diesem Leben und dem Jenseits",
+          "meaning": "Unser Herr, gib uns Güte in dieser Welt und im Jenseits, und bewahre uns vor der Strafe des Feuers.",
+          "explanation": "Ein Gebet um Rettung im Diesseits und Jenseits.",
+          "reference": "-"
+        },
+        "id": {
+          "title": "Kebaikan Dunia dan Akhirat",
+          "meaning": "Ya Tuhan kami, berilah kami kebaikan di dunia dan akhirat, serta lindungilah kami dari siksa api neraka.",
+          "explanation": "Doa untuk keselamatan di dunia dan akhirat.",
+          "reference": "-"
+        },
+        "ja": {
+          "title": "この世と来世の善意の祈り",
+          "meaning": "私たちの主よ、この世と来世に善を与え、地獄の苦しみから私たちを守ってください。",
+          "explanation": "現世と来世の救いを願う祈り。",
+          "reference": "-"
+        },
+        "ko": {
+          "title": "현세와 내세의 선을 위한 기도",
+          "meaning": "우리 주여, 이 세상과 내세에서의 선함을 주시고, 지옥의 형벌에서 우리를 보호하소서.",
+          "explanation": "현세와 내세의 구원을 구하는 기도입니다.",
+          "reference": "-"
+        },
+        "tr": {
+          "title": "Bu Dünya ve Ahiret İçin Hayır",
+          "meaning": "Rabbimiz, bize bu dünyada da ahirette de iyilik ver ve bizi cehennem azabından koru.",
+          "explanation": "Dünya ve ahiret için kurtuluş duası.",
+          "reference": "-"
+        },
+        "uz": {
+          "title": "Ikki dunyo yaxshiligi uchun duo",
+          "meaning": "Parvardigoro, bizga bu dunyoda ham, oxiratda ham yaxshilik ato etgin va do‘zax azobidan asragin.",
+          "explanation": "Bu duo dunyo va oxirat najoti uchun so‘raladi.",
+          "reference": "-"
+        },
+        "kz": {
+          "title": "Екі дүниеге жақсылық дұғасы",
+          "meaning": "Әй Раббымыз, бізге осы дүниеде де, ақиретте де жақсылық бер және бізді тозақ азабынан сақта.",
+          "explanation": "Дүние мен ақиреттің амандығын сұрайды.",
+          "reference": "-"
+        },
+        "kg": {
+          "title": "Эки дүйнө үчүн жакшылык тилеген дуо",
+          "meaning": "Эй Раббым, бизге бул дүйнөдө да, ахиретте да жакшылык бергин жана бизди дын казадан сакта.",
+          "explanation": "Бул дуо дүйнө жана ахирет кылымдагы сактануу үчүн.",
+          "reference": "-"
+        },
+        "ru": {
+          "title": "Добро в этом мире и в следующем",
+          "meaning": "Господь наш, даруй нам благо в этом мире и в будущем, и защити нас от мучений огня.",
+          "explanation": "Молитва о спасении в мире и на том свете.",
+          "reference": "-"
+        }
+      }
+    },
+    {
+      "id": "enter_mosque",
+      "translations": {
+        "en": {
+          "title": "Entering the mosque",
+          "meaning": "O Allah, open the doors of Your mercy for me.",
+          "explanation": "Prayer when entering the mosque.",
+          "reference": "-"
+        },
+        "fr": {
+          "title": "Entrer dans la mosquée",
+          "meaning": "Ô Allah, ouvre-moi les portes de Ta miséricorde.",
+          "explanation": "Prière à dire en entrant dans la mosquée.",
+          "reference": "-"
+        },
+        "de": {
+          "title": "Eintreten in die Moschee",
+          "meaning": "O Allah, öffne mir die Türen Deiner Barmherzigkeit.",
+          "explanation": "Gebet beim Betreten der Moschee.",
+          "reference": "-"
+        },
+        "id": {
+          "title": "Masuk Masjid",
+          "meaning": "Ya Allah, bukakanlah pintu rahmat-Mu untukku.",
+          "explanation": "Doa saat memasuki masjid.",
+          "reference": "-"
+        },
+        "ja": {
+          "title": "モスクに入るときの祈り",
+          "meaning": "神よ、私にあなたの慈悲の扉を開いてください。",
+          "explanation": "モスクに入るときの祈り。",
+          "reference": "-"
+        },
+        "ko": {
+          "title": "모스크에 들어갈 때의 기도",
+          "meaning": "오, 알라여, 저에게 자비의 문을 열어주소서.",
+          "explanation": "모스크에 들어갈 때 드리는 기도입니다.",
+          "reference": "-"
+        },
+        "tr": {
+          "title": "Mescide Girerken Dua",
+          "meaning": "Allah’ım, rahmet kapılarını benim için aç.",
+          "explanation": "Mescide girerken okunan dua.",
+          "reference": "-"
+        },
+        "uz": {
+          "title": "Masjidga kirishda duo",
+          "meaning": "Ey Allohim, rahmating eshiklarini menga ochgin.",
+          "explanation": "Masjidga kirishda o'qiladi.",
+          "reference": "-"
+        },
+        "kz": {
+          "title": "Мешітке кіргенде дұға",
+          "meaning": "Аллахым, маған мейірім қақпаларын аш.",
+          "explanation": "Мешітке кіргенде айтылатын дұға.",
+          "reference": "-"
+        },
+        "kg": {
+          "title": "Мешитке киргенде кылынчу доо",
+          "meaning": "Эй Падышам, мага мээрим эшиктерин ач.",
+          "explanation": "Мешитке киргениңде окула�� дуо.",
+          "reference": "-"
+        },
+        "ru": {
+          "title": "Вход в мечеть",
+          "meaning": "О, Аллах, открой для меня двери Своей милости.",
+          "explanation": "Молитва при входе в мечеть.",
+          "reference": "-"
+        }
+      }
+    }
+  ]
+  
