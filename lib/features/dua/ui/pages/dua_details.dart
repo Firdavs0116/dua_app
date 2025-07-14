@@ -11,22 +11,20 @@ class DuaDetailsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final localeCode = Localizations.localeOf(context).languageCode;
-    print("dua details page ga kirdi");
     final translation = dua.translations[localeCode] ?? dua.translations['en'];
+
     final title = translation?.title ?? '';
     final meaning = translation?.meaning ?? '';
     final explanation = translation?.explanation ?? '';
     final reference = translation?.reference ?? '';
-    final category = dua.category[localeCode] ?? '';
-
-    print("Current locale: $localeCode");
-    print("Title: ${translation?.title}");
-    print("Explanation: ${translation?.explanation}");
+    final category = dua.category[localeCode] ?? dua.category['en'] ?? '';
 
     return Scaffold(
       backgroundColor: AppColors.backgroundColor,
-      appBar: AppBar(title: Text(title),
-      backgroundColor: AppColors.backgroundColor,),
+      appBar: AppBar(
+        title: Text(title),
+        backgroundColor: AppColors.backgroundColor,
+      ),
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: SingleChildScrollView(
@@ -54,31 +52,21 @@ class DuaDetailsPage extends StatelessWidget {
               ),
               const SizedBox(height: 12),
 
-              Text(
-                AppLocalizations.of(context)!.meaning,
-                style: const TextStyle(fontWeight: FontWeight.bold),
-              ),
+              Text(AppLocalizations.of(context)!.meaning, style: const TextStyle(fontWeight: FontWeight.bold)),
               Text(meaning),
               const SizedBox(height: 12),
 
-              Text(
-                AppLocalizations.of(context)!.explanation,
-                style: const TextStyle(fontWeight: FontWeight.bold),
-              ),
+              Text(AppLocalizations.of(context)!.explanation, style: const TextStyle(fontWeight: FontWeight.bold)),
               Text(explanation),
               const SizedBox(height: 12),
 
-              Text(
-                AppLocalizations.of(context)!.reference,
-                style: const TextStyle(fontWeight: FontWeight.bold),
-              ),
-
+              Text(AppLocalizations.of(context)!.reference, style: const TextStyle(fontWeight: FontWeight.bold)),
               Text(reference),
               const SizedBox(height: 24),
-              // Text("Nimadur"),
+
               ElevatedButton(
                 onPressed: () {
-                  // TODO: implement audio playback
+                  // TODO: Audio player integration
                 },
                 child: Text(AppLocalizations.of(context)!.playAudio),
               ),

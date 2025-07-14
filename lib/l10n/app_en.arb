@@ -38,5 +38,7 @@
   "goToZikr": "Go to Zikrs",
   "tasbeeh": "Tasbeeh",
   "goToTasbeeh": "Go to Tasbeeh",
-  "search": "Search"
+  "search": "Search",
+  "duaIntro": "Dua intro (o'zgartiriladi)",
+  "searchHint" : "Search Hint (o'zgaradi)"
 }

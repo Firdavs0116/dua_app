@@ -4,6 +4,7 @@ import 'package:my_dua_app/core/constants/app_colors.dart';
 import 'package:my_dua_app/features/dua/ui/cubit/dua_cubit.dart';
 import 'package:my_dua_app/features/dua/ui/pages/dua_details.dart';
 import 'package:my_dua_app/injection/service_locator.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class DuaListPage extends StatelessWidget {
   const DuaListPage({super.key});
@@ -17,65 +18,59 @@ class DuaListPage extends StatelessWidget {
       child: Scaffold(
         backgroundColor: AppColors.backgroundColor,
         appBar: AppBar(
-          title: const Text("Duas", style: TextStyle(fontWeight: FontWeight.bold)),
+          title: Text(AppLocalizations.of(context)!.duas),
           backgroundColor: AppColors.backgroundColor,
-          actions: [
+          actions: const [
             Icon(Icons.language),
-            const SizedBox(width: 8),
+            SizedBox(width: 8),
             Icon(Icons.brightness_6),
-            const SizedBox(width: 16),
+            SizedBox(width: 16),
           ],
         ),
         body: Padding(
           padding: const EdgeInsets.all(12),
           child: Column(
             children: [
-              const Align(
+              Align(
                 alignment: Alignment.centerLeft,
                 child: Text(
-                  "Collection of supplications from the Quran and Sunnah.",
-                  style: TextStyle(fontSize: 16, color: Colors.black54),
+                  AppLocalizations.of(context)!.duaIntro,
+                  style: const TextStyle(fontSize: 16, color: Colors.black54),
                 ),
               ),
               const SizedBox(height: 12),
 
-              // Search bar
+              // Search bar (future implementation)
               TextField(
-                
                 decoration: InputDecoration(
-                  
-                  hintText: 'Search for a dua...',
-                  prefixIcon: Icon(Icons.search),
+                  hintText: AppLocalizations.of(context)!.searchHint,
+                  prefixIcon: const Icon(Icons.search),
                   border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
                   filled: true,
-                  fillColor: Colors.white
+                  fillColor: Colors.white,
                 ),
               ),
               const SizedBox(height: 12),
 
-              // Category chips
+              // Category chips (optional filtering)
               SizedBox(
-                
                 height: 40,
                 child: ListView(
-                
                   scrollDirection: Axis.horizontal,
                   children: [
-                    _buildCategoryChip("All"),
-                    _buildCategoryChip("Morning"),
-                    _buildCategoryChip("Evening"),
-                    _buildCategoryChip("Protection"),
-                    _buildCategoryChip("Forgiveness"),
+                    _buildCategoryChip(context, "All"),
+                    _buildCategoryChip(context, "Morning"),
+                    _buildCategoryChip(context, "Evening"),
+                    _buildCategoryChip(context, "Protection"),
+                    _buildCategoryChip(context, "Forgiveness"),
                   ],
                 ),
               ),
               const SizedBox(height: 12),
 
-              // Dua list
+              // Dua List
               Expanded(
-              
                 child: BlocBuilder<DuaCubit, DuaState>(
-                
                   builder: (context, state) {
                     if (state is DuaLoading) {
                       return const Center(child: CircularProgressIndicator());
@@ -85,11 +80,10 @@ class DuaListPage extends StatelessWidget {
                         itemCount: state.duas.length,
                         itemBuilder: (context, index) {
                           final dua = state.duas[index];
-                          final translation = dua.translations[locale];
-                          final category = dua.category[locale] ?? '';
+                          final translation = dua.translations[locale] ?? dua.translations['en'];
+                          final category = dua.category[locale] ?? dua.category['en'] ?? '';
 
                           return Card(
-                               
                             color: Colors.white,
                             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
                             elevation: 3,
@@ -116,22 +110,25 @@ class DuaListPage extends StatelessWidget {
                                     style: const TextStyle(fontStyle: FontStyle.italic),
                                   ),
 
-                                  // Translation
                                   const SizedBox(height: 10),
+
+                                  // Translation
                                   Text(
                                     translation?.meaning ?? '',
                                     style: const TextStyle(color: Colors.black87),
                                   ),
 
-                                  // Read more & audio
                                   const SizedBox(height: 10),
+
                                   Row(
                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     children: [
                                       ElevatedButton.icon(
-                                        onPressed: () {},
+                                        onPressed: () {
+                                          // TODO: audio player
+                                        },
                                         icon: const Icon(Icons.play_arrow),
-                                        label: const Text("Play"),
+                                        label: Text(AppLocalizations.of(context)!.playAudio),
                                         style: ElevatedButton.styleFrom(
                                           backgroundColor: Colors.grey[200],
                                           foregroundColor: Colors.black,
@@ -147,7 +144,7 @@ class DuaListPage extends StatelessWidget {
                                             ),
                                           );
                                         },
-                                        child: const Text("Read More"),
+                                        child: Text(AppLocalizations.of(context)!.readMore),
                                       ),
                                     ],
                                   ),
@@ -172,7 +169,7 @@ class DuaListPage extends StatelessWidget {
     );
   }
 
-  Widget _buildCategoryChip(String title) {
+  Widget _buildCategoryChip(BuildContext context, String title) {
     return Padding(
       padding: const EdgeInsets.only(right: 8),
       child: ChoiceChip(

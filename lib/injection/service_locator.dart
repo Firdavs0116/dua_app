@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:get_it/get_it.dart';
+import 'package:my_dua_app/features/dua/data/datasources/dua_locale_datasource.dart';
 import 'package:my_dua_app/features/dua/data/datasources/dua_remote_datasource.dart';
 import 'package:my_dua_app/features/dua/data/repositories/dua_repository_impl.dart';
 import 'package:my_dua_app/features/dua/domain/repository/dua_repository.dart';
@@ -54,10 +55,28 @@ Future<void> init() async {
       ));
 
   // Dua
-  sl.registerLazySingleton<DuaRemoteDataSource>(
-      () => DuaRemoteDataSourceImpl(firestore: sl()));
-  sl.registerLazySingleton<DuaRepository>(
-      () => DuaRepositoryImpl(remoteDataSource: sl()));
-  sl.registerLazySingleton(() => GetDuasUsecase(sl()));
-  sl.registerFactory(() => DuaCubit(getDuasUsecase: sl()));
+sl.registerLazySingleton<DuaRemoteDataSource>(
+  () => DuaRemoteDataSourceImpl(firestore: sl()),
+);
+
+sl.registerLazySingleton<DuaLocaleDatasource>(
+  () => DuaLocaleDatasourceImpl(prefs: sl()),
+);
+
+sl.registerLazySingleton<DuaRepository>(
+  () => DuaRepositoryImpl(
+    remoteDataSource: sl(),
+    localeDatasource: sl(),
+  ),
+);
+
+sl.registerLazySingleton(() => GetDuasUsecase(sl()));
+
+sl.registerFactory(() => DuaCubit(getDuasUsecase: sl()));
+
+
+  final duaRepository = DuaRepositoryImpl(
+  remoteDataSource: DuaRemoteDataSourceImpl(firestore: FirebaseFirestore.instance),
+  localeDatasource: DuaLocaleDatasourceImpl(prefs: sl()),
+);
 }

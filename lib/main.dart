@@ -1,12 +1,9 @@
-// main.dart
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:my_dua_app/core/utils/upload_duas.dart';
 import 'package:my_dua_app/core/utils/upload_zikrs.dart';
 import 'package:my_dua_app/features/auth/presentation/pages/splashscreen.dart';
 import 'package:my_dua_app/features/dua/ui/pages/dua_list_page.dart';
@@ -14,7 +11,6 @@ import 'package:my_dua_app/features/language/presentation/ui/language_selector_p
 import 'firebase_options.dart';
 import 'package:my_dua_app/injection/service_locator.dart' as di;
 import 'package:my_dua_app/features/auth/presentation/cubit/auth_cubit.dart';
-import 'package:my_dua_app/features/auth/presentation/pages/login_page.dart';
 import 'package:my_dua_app/features/home/presentation/pages/home_page.dart';
 import 'package:my_dua_app/features/language/presentation/cubit/locale_cubit.dart';
 
@@ -57,7 +53,7 @@ class _MyAppState extends State<MyApp> {
 void initState() {
   super.initState();
   // uploadDuasFromJson(); buni har safar run qilganda qaytadan yuklab qo'yadi
-  uploadZikrsfromJson();
+  // uploadZikrsfromJson();
 }
 
 

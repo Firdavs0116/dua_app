@@ -38,5 +38,7 @@
   "goToZikr": "Zikrlarga o'tish",
   "tasbeeh": "Tasbeh",
   "goToTasbeeh": "Tasbehga o'tish",
-  "search": "Qidirish"
+  "search": "Qidirish",
+  "duaIntro": "Dua intro (o'zgartiriladi)",
+  "searchHint" : "Search Hint (o'zgaradi)"
 }

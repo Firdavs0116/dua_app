@@ -60,7 +60,7 @@ class _HomeCardState extends State<HomeCard> {
         duration: const Duration(milliseconds: 200),
         margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
         padding: const EdgeInsets.all(20),
-        height: size.height * 0.25,
+        height: size.height * 0.15,
         decoration: BoxDecoration(
           color: Colors.white,
           border: Border.all(
@@ -92,15 +92,15 @@ class _HomeCardState extends State<HomeCard> {
                 Icon(widget.icon, color: titleAndIconColor, size: 26),
               ],
             ),
-            const SizedBox(height: 12),
-            Text(
-              widget.description,
-              style: const TextStyle(
-                fontSize: 15,
-                color: Colors.black,
-              ),
-            ),
-            const Spacer(),
+            // const SizedBox(height: 12),
+            // Text(
+            //   widget.description,
+            //   style: const TextStyle(
+            //     fontSize: 15,
+            //     color: Colors.black,
+            //   ),
+            // ),
+            // const Spacer(),
             Row(
               children: [
                 Text(

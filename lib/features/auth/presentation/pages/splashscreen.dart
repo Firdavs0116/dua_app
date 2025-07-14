@@ -31,7 +31,7 @@ class _SplashPageState extends State<SplashPage> {
     final user = FirebaseAuth.instance.currentUser;
     final hasLoggedIn = prefs.getBool("hasLoggedIn") ?? false;
 
-    if (user != null && hasLoggedIn) {
+    if (user != null) {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (_) => HomePage(onLocaleChange: (Locale p1) {  }, onThemeToggle: (_) {  },)),

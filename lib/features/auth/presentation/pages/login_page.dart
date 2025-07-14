@@ -8,46 +8,67 @@ import 'package:my_dua_app/features/auth/presentation/pages/forgot_password.dart
 import 'package:my_dua_app/features/auth/presentation/pages/register_page.dart';
 import 'package:my_dua_app/features/language/presentation/widgets/language_selector_with_flags.dart';
 
-class LoginPage extends StatelessWidget {
+class LoginPage extends StatefulWidget {
   final void Function(Locale locale) onLocaleChange;
   final void Function(bool value) onThemeToggle;
 
-  final emailController = TextEditingController();
-  final passwordController = TextEditingController();
-  final _formkey = GlobalKey<FormState>();
-  final emailRegex = RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$');
-
-  LoginPage({
+  const LoginPage({
     super.key,
     required this.onLocaleChange,
     required this.onThemeToggle,
   });
 
   @override
+  State<LoginPage> createState() => _LoginPageState();
+}
+
+class _LoginPageState extends State<LoginPage> {
+  final emailController = TextEditingController();
+  final passwordController = TextEditingController();
+  final _formKey = GlobalKey<FormState>();
+  final emailRegex = RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$');
+
+  bool _obsecure = true;
+
+  @override
+  void dispose() {
+    emailController.dispose();
+    passwordController.dispose();
+    super.dispose();
+  }
+
+  void _toggleVisibility() {
+    setState(() {
+      _obsecure = !_obsecure;
+    });
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.backgroundColor,
-        // title: Text(AppLocalizations.of(context)!.login),
         actions: [
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 10),
-            child: LanguageSelectorWithFlags(onLocaleChanged: onLocaleChange),
+            padding: const EdgeInsets.symmetric(horizontal: 10),
+            child: LanguageSelectorWithFlags(
+              onLocaleChanged: widget.onLocaleChange,
+            ),
           ),
         ],
       ),
       backgroundColor: AppColors.backgroundColor,
       body: Center(
         child: SingleChildScrollView(
-          padding: EdgeInsets.all(16),
+          padding: const EdgeInsets.all(16),
           child: Form(
-            key: _formkey,
+            key: _formKey,
             autovalidateMode: AutovalidateMode.onUserInteraction,
             child: Column(
               children: [
                 Text(
                   AppLocalizations.of(context)!.welcomeBack,
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 28,
                     fontWeight: FontWeight.bold,
                     color: Color(0xFF223E7F),
@@ -55,11 +76,10 @@ class LoginPage extends StatelessWidget {
                   textAlign: TextAlign.center,
                 ),
                 const SizedBox(height: 32),
-
                 TextFormField(
                   controller: emailController,
                   decoration: InputDecoration(
-                    labelText: AppLocalizations.of(context)!.email, // Email
+                    labelText: AppLocalizations.of(context)!.email,
                     filled: true,
                     fillColor: Colors.white,
                     border: OutlineInputBorder(
@@ -68,48 +88,45 @@ class LoginPage extends StatelessWidget {
                   ),
                   validator: (value) {
                     if (value == null || value.isEmpty) {
-                      return AppLocalizations.of(
-                        context,
-                      )!.enterYourEmail; // Enter your email address
+                      return AppLocalizations.of(context)!.enterYourEmail;
                     } else if (!emailRegex.hasMatch(value)) {
-                      return AppLocalizations.of(
-                        context,
-                      )!.wrongEmailTryAgain; // Wrong Email address
+                      return AppLocalizations.of(context)!.wrongEmailTryAgain;
                     }
                     return null;
                   },
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 TextFormField(
                   controller: passwordController,
-                  obscureText: true,
+                  obscureText: _obsecure,
                   decoration: InputDecoration(
-                    labelText:
-                        AppLocalizations.of(context)!.password, // Password
+                    labelText: AppLocalizations.of(context)!.password,
                     filled: true,
                     fillColor: Colors.white,
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(12),
                     ),
+                    suffixIcon: IconButton(
+                      icon: Icon(
+                        _obsecure ? Icons.visibility_off : Icons.visibility,
+                      ),
+                      onPressed: _toggleVisibility,
+                    ),
                   ),
                   validator: (value) {
                     if (value == null || value.isEmpty) {
-                      return AppLocalizations.of(
-                        context,
-                      )!.enterYourPassword; // Enter your password
+                      return AppLocalizations.of(context)!.enterYourPassword;
                     } else if (value.length < 6) {
-                      return AppLocalizations.of(
-                        context,
-                      )!.invalidPassword; // Wrong password
+                      return AppLocalizations.of(context)!.invalidPassword;
                     }
                     return null;
                   },
                 ),
-                SizedBox(height: 32),
+                const SizedBox(height: 32),
                 BlocConsumer<AuthCubit, AuthState>(
                   builder: (context, state) {
                     if (state is AuthLoading) {
-                      return Center(child: CircularProgressIndicator());
+                      return const CircularProgressIndicator();
                     }
 
                     return ElevatedButton(
@@ -119,53 +136,50 @@ class LoginPage extends StatelessWidget {
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(12),
                         ),
-                        minimumSize: Size(200, 50),
+                        minimumSize: const Size(200, 50),
                       ),
                       onPressed: () {
-                        if (_formkey.currentState!.validate()) {
+                        if (_formKey.currentState!.validate()) {
                           context.read<AuthCubit>().login(
-                            emailController.text.trim(),
-                            passwordController.text.trim(),
-                          );
+                                emailController.text.trim(),
+                                passwordController.text.trim(),
+                              );
                         }
                       },
-                      child: Text(
-                        AppLocalizations.of(context)!.login, // Login
-                      ),
+                      child: Text(AppLocalizations.of(context)!.login),
                     );
                   },
-
                   listener: (context, state) {
                     if (state is AuthFailure) {
-                      ScaffoldMessenger.of(
-                        context,
-                      ).showSnackBar(SnackBar(content: Text(state.message)));
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(content: Text(state.message)),
+                      );
                     }
                     if (state is AuthSuccess) {
                       Navigator.pushReplacementNamed(context, "/home");
                     }
                   },
                 ),
-                // SizedBox(height: 10),
                 TextButton(
                   onPressed: () {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder:
-                            (_) => RegisterPage(
-                              onLocaleChange: onLocaleChange,
-                              onThemeToggle: onThemeToggle,
-                            ),
+                        builder: (_) => RegisterPage(
+                          onLocaleChange: widget.onLocaleChange,
+                          onThemeToggle: widget.onThemeToggle,
+                        ),
                       ),
                     );
                   },
                   child: Text(AppLocalizations.of(context)!.notregistered),
                 ),
-
                 TextButton(
                   onPressed: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (_) => ForgotPasswordPage()));
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (_) => ForgotPasswordPage()),
+                    );
                   },
                   child: Text(AppLocalizations.of(context)!.forgotPassword),
                 ),
