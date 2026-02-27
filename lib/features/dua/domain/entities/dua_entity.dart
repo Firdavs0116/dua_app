@@ -5,6 +5,7 @@ class DuaEntity{
   final String audioUrl;
   final Map<String, String> category;
   final Map<String, Translation> translations;
+  final bool isFavorite;
 
   DuaEntity({
     required this.id,
@@ -12,7 +13,8 @@ class DuaEntity{
     required this.audioUrl,
     required this.category,
     required this.translations,
-    required this.transliteration
+    required this.transliteration,
+    this.isFavorite = false
   });
 }
 class Translation {

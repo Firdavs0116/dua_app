@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:my_dua_app/core/constants/app_colors.dart';
 import 'package:my_dua_app/features/dua/domain/entities/dua_entity.dart';
+import 'package:my_dua_app/l10n/app_localizations.dart';
 
 class DuaDetailsPage extends StatelessWidget {
   final DuaEntity dua;

@@ -4,10 +4,18 @@ import 'package:my_dua_app/core/constants/app_colors.dart';
 import 'package:my_dua_app/features/dua/ui/cubit/dua_cubit.dart';
 import 'package:my_dua_app/features/dua/ui/pages/dua_details.dart';
 import 'package:my_dua_app/injection/service_locator.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:my_dua_app/l10n/app_localizations.dart';
 
-class DuaListPage extends StatelessWidget {
+class DuaListPage extends StatefulWidget {
   const DuaListPage({super.key});
+
+  @override
+  State<DuaListPage> createState() => _DuaListPageState();
+}
+
+class _DuaListPageState extends State<DuaListPage> {
+  String _searchQuery = '';
+  String _selectedCategory = 'All'; // Default category
 
   @override
   Widget build(BuildContext context) {
@@ -20,12 +28,8 @@ class DuaListPage extends StatelessWidget {
         appBar: AppBar(
           title: Text(AppLocalizations.of(context)!.duas),
           backgroundColor: AppColors.backgroundColor,
-          actions: const [
-            Icon(Icons.language),
-            SizedBox(width: 8),
-            Icon(Icons.brightness_6),
-            SizedBox(width: 16),
-          ],
+          
+          
         ),
         body: Padding(
           padding: const EdgeInsets.all(12),
@@ -36,12 +40,17 @@ class DuaListPage extends StatelessWidget {
                 child: Text(
                   AppLocalizations.of(context)!.duaIntro,
                   style: const TextStyle(fontSize: 16, color: Colors.black54),
-                ),
+                ), 
               ),
               const SizedBox(height: 12),
 
-              // Search bar (future implementation)
+              // Search bar
               TextField(
+                onChanged: (value) {
+                  setState(() {
+                    _searchQuery = value.toLowerCase();
+                  });
+                },
                 decoration: InputDecoration(
                   hintText: AppLocalizations.of(context)!.searchHint,
                   prefixIcon: const Icon(Icons.search),
@@ -52,7 +61,7 @@ class DuaListPage extends StatelessWidget {
               ),
               const SizedBox(height: 12),
 
-              // Category chips (optional filtering)
+              // Category chips
               SizedBox(
                 height: 40,
                 child: ListView(
@@ -76,13 +85,22 @@ class DuaListPage extends StatelessWidget {
                       return const Center(child: CircularProgressIndicator());
                     }
                     if (state is DuaLoaded) {
+                      // Filter duas based on search query and selected category
+                      final filteredDuas = state.duas.where((dua) {
+                        final translation = dua.translations[locale] ?? dua.translations['en'];
+                        print("Category bo'shmi: ${translation!.title}");
+                        final matchesSearch = translation.meaning.toLowerCase().contains(_searchQuery) ?? false;
+                        final matchesCategory = _selectedCategory == 'All' || dua.category[locale]!.contains(_selectedCategory) ?? false;
+                        return matchesSearch && matchesCategory;
+                      }).toList();
+
                       return ListView.builder(
-                        itemCount: state.duas.length,
+                        itemCount: filteredDuas.length,
                         itemBuilder: (context, index) {
-                          final dua = state.duas[index];
+                          final dua = filteredDuas[index];
                           final translation = dua.translations[locale] ?? dua.translations['en'];
                           final category = dua.category[locale] ?? dua.category['en'] ?? '';
-
+                          
                           return Card(
                             color: Colors.white,
                             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
@@ -120,20 +138,22 @@ class DuaListPage extends StatelessWidget {
 
                                   const SizedBox(height: 10),
 
+                                  // Category
+                                  Text(
+                                    category,
+                                    style: const TextStyle(color: Colors.black, fontStyle: FontStyle.italic),
+                                  ),
+
+                                  const SizedBox(height: 10),
+
                                   Row(
                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     children: [
-                                      ElevatedButton.icon(
+                                      IconButton(
                                         onPressed: () {
-                                          // TODO: audio player
+                                          //audio uchun to'ldirish
                                         },
-                                        icon: const Icon(Icons.play_arrow),
-                                        label: Text(AppLocalizations.of(context)!.playAudio),
-                                        style: ElevatedButton.styleFrom(
-                                          backgroundColor: Colors.grey[200],
-                                          foregroundColor: Colors.black,
-                                          elevation: 0,
-                                        ),
+                                        icon: Icon(Icons.play_circle_fill_rounded, size: 40),
                                       ),
                                       TextButton(
                                         onPressed: () {
@@ -170,13 +190,19 @@ class DuaListPage extends StatelessWidget {
   }
 
   Widget _buildCategoryChip(BuildContext context, String title) {
+    final isSelected = _selectedCategory == title;
     return Padding(
       padding: const EdgeInsets.only(right: 8),
       child: ChoiceChip(
         backgroundColor: Colors.white,
         label: Text(title),
-        selected: false,
-        onSelected: (bool selected) {},
+        selected: isSelected,
+        selectedColor: AppColors.mainWords, // Tanlangan rang
+        onSelected: (bool selected) {
+          setState(() {
+            _selectedCategory = selected ? title : 'All'; // Kategoriya tanlanganda
+          });
+        },
       ),
     );
   }

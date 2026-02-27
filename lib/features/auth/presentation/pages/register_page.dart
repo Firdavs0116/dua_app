@@ -4,8 +4,8 @@ import 'package:my_dua_app/core/constants/app_colors.dart';
 import 'package:my_dua_app/features/auth/presentation/cubit/auth_cubit.dart';
 import 'package:my_dua_app/features/auth/presentation/cubit/auth_state.dart';
 import 'package:my_dua_app/features/home/presentation/pages/home_page.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:my_dua_app/features/language/presentation/widgets/language_selector_with_flags.dart';
+import 'package:my_dua_app/l10n/app_localizations.dart';
 
 class RegisterPage extends StatefulWidget {
   final void Function(Locale locale) onLocaleChange;

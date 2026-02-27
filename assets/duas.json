@@ -1,216 +1,632 @@
 [
-    {
-      "id": "forgive_parents",
-      "translations": {
-        "en": {
-          "title": "Forgiveness for Parents",
-          "meaning": "O my Lord, forgive me and my parents, have mercy on them as they had mercy on me when I was little.",
-          "explanation": "A child's prayer for both parents.",
-          "reference": "-"
-        },
-        "fr": {
-          "title": "Pardon pour les parents",
-          "meaning": "Ô mon Seigneur, pardonne-moi, ainsi qu'à mes parents, et fais-leur miséricorde comme ils ont eu pitié de moi quand j'étais petit.",
-          "explanation": "Prière d'un enfant pour ses deux parents.",
-          "reference": "-"
-        },
-        "de": {
-          "title": "Vergebung für die Eltern",
-          "meaning": "O mein Herr, vergib mir und meinen Eltern und erbarme dich ihrer, wie sie sich meiner erbarmt haben, als ich klein war.",
-          "explanation": "Ein Kind betet für beide Eltern.",
-          "reference": "-"
-        },
-        "id": {
-          "title": "Pengampunan untuk Orang Tua",
-          "meaning": "Ya Tuhanku, ampunilah aku dan kedua orang tuaku, rahmatilah mereka sebagaimana mereka merahmatiku saat aku kecil.",
-          "explanation": "Doa seorang anak untuk kedua orang tuanya.",
-          "reference": "-"
-        },
-        "ja": {
-          "title": "両親の許しの祈り",
-          "meaning": "おお主よ、私と両親をお許しください。かれらが幼い私に慈しみを注いでくれたように、かれらを憐れんでください。",
-          "explanation": "子供が両親に捧げる祈り。",
-          "reference": "-"
-        },
-        "ko": {
-          "title": "부모를 위한 용서의 기도",
-          "meaning": "오 나의 주님, 저와 저의 부모님을 용서하시고, 어렸을 때 저를 불쌍히 여겼듯이 그들에게 자비를 베푸소서.",
-          "explanation": "아이의 부모를 위한 기도입니다.",
-          "reference": "-"
-        },
-        "tr": {
-          "title": "Anne-Babaya Affedilme Duası",
-          "meaning": "Ey Rabbim, beni ve anne-babamı affet, onlar beni küçükken merhamet ettikleri gibi onlara da merhamet et.",
-          "explanation": "Bir çocuğun her iki ebeveyni için duası.",
-          "reference": "-"
-        },
-        "uz": {
-          "title": "Ota-onaga magʻfirat soʻrash",
-          "meaning": "Ey Rabbim, meni va ota-onamni magʻfirat qilgin, ular meni yoshligimda tarbiyalaganlaridek ularga rahm qilgin.",
-          "explanation": "Farzandning ota-onasiga qilgan duosi.",
-          "reference": "-"
-        },
-        "kz": {
-          "title": "Ата-ананы кешіру дұғасы",
-          "meaning": "Әй Раббым, мені және ата-анамды кешір, олар мені бала кезде кешіргендей, оларға да мейірім ет.",
-          "explanation": "Баланың ата-анасына жасаған дұғасы.",
-          "reference": "-"
-        },
-        "kg": {
-          "title": "Ата-энеге кечирим тилегич дуо",
-          "meaning": "Эй Падышам, мени жана ата-энемди кечиргин, алар мени кичинекей кезимде кечиргендей, аларга да мээрим кыл.",
-          "explanation": "Баланын ата-энесине кылган дуосу.",
-          "reference": "-"
-        },
-        "ru": {
-          "title": "Прощение для родителей",
-          "meaning": "О, мой Господь, прости меня и моих родителей, помилуй их, как они помиловали меня в детстве.",
-          "explanation": "Молитва ребёнка за обоих родителей.",
-          "reference": "-"
-        }
-      }
-    },
-    {
-      "id": "hasanah_prayer",
-      "translations": {
-        "en": {
-          "title": "Goodness in this life and the next",
-          "meaning": "Our Lord, give us goodness in this world and the hereafter, and protect us from the torment of hell.",
-          "explanation": "Prayer asks for salvation in the dunya and the akhirah.",
-          "reference": "-"
-        },
-        "fr": {
-          "title": "Bonté pour ce monde et l'au-delà",
-          "meaning": "Notre Seigneur, accorde-nous la bonté dans ce monde ici-bas et dans l'au-delà, et protège-nous du châtiment du feu.",
-          "explanation": "Prière pour la réussite dans la vie et l'au-delà.",
-          "reference": "-"
-        },
-        "de": {
-          "title": "Güte in diesem Leben und dem Jenseits",
-          "meaning": "Unser Herr, gib uns Güte in dieser Welt und im Jenseits, und bewahre uns vor der Strafe des Feuers.",
-          "explanation": "Ein Gebet um Rettung im Diesseits und Jenseits.",
-          "reference": "-"
-        },
-        "id": {
-          "title": "Kebaikan Dunia dan Akhirat",
-          "meaning": "Ya Tuhan kami, berilah kami kebaikan di dunia dan akhirat, serta lindungilah kami dari siksa api neraka.",
-          "explanation": "Doa untuk keselamatan di dunia dan akhirat.",
-          "reference": "-"
-        },
-        "ja": {
-          "title": "この世と来世の善意の祈り",
-          "meaning": "私たちの主よ、この世と来世に善を与え、地獄の苦しみから私たちを守ってください。",
-          "explanation": "現世と来世の救いを願う祈り。",
-          "reference": "-"
-        },
-        "ko": {
-          "title": "현세와 내세의 선을 위한 기도",
-          "meaning": "우리 주여, 이 세상과 내세에서의 선함을 주시고, 지옥의 형벌에서 우리를 보호하소서.",
-          "explanation": "현세와 내세의 구원을 구하는 기도입니다.",
-          "reference": "-"
-        },
-        "tr": {
-          "title": "Bu Dünya ve Ahiret İçin Hayır",
-          "meaning": "Rabbimiz, bize bu dünyada da ahirette de iyilik ver ve bizi cehennem azabından koru.",
-          "explanation": "Dünya ve ahiret için kurtuluş duası.",
-          "reference": "-"
-        },
-        "uz": {
-          "title": "Ikki dunyo yaxshiligi uchun duo",
-          "meaning": "Parvardigoro, bizga bu dunyoda ham, oxiratda ham yaxshilik ato etgin va do‘zax azobidan asragin.",
-          "explanation": "Bu duo dunyo va oxirat najoti uchun so‘raladi.",
-          "reference": "-"
-        },
-        "kz": {
-          "title": "Екі дүниеге жақсылық дұғасы",
-          "meaning": "Әй Раббымыз, бізге осы дүниеде де, ақиретте де жақсылық бер және бізді тозақ азабынан сақта.",
-          "explanation": "Дүние мен ақиреттің амандығын сұрайды.",
-          "reference": "-"
-        },
-        "kg": {
-          "title": "Эки дүйнө үчүн жакшылык тилеген дуо",
-          "meaning": "Эй Раббым, бизге бул дүйнөдө да, ахиретте да жакшылык бергин жана бизди дын казадан сакта.",
-          "explanation": "Бул дуо дүйнө жана ахирет кылымдагы сактануу үчүн.",
-          "reference": "-"
-        },
-        "ru": {
-          "title": "Добро в этом мире и в следующем",
-          "meaning": "Господь наш, даруй нам благо в этом мире и в будущем, и защити нас от мучений огня.",
-          "explanation": "Молитва о спасении в мире и на том свете.",
-          "reference": "-"
-        }
-      }
-    },
-    {
-      "id": "enter_mosque",
-      "translations": {
-        "en": {
-          "title": "Entering the mosque",
-          "meaning": "O Allah, open the doors of Your mercy for me.",
-          "explanation": "Prayer when entering the mosque.",
-          "reference": "-"
-        },
-        "fr": {
-          "title": "Entrer dans la mosquée",
-          "meaning": "Ô Allah, ouvre-moi les portes de Ta miséricorde.",
-          "explanation": "Prière à dire en entrant dans la mosquée.",
-          "reference": "-"
-        },
-        "de": {
-          "title": "Eintreten in die Moschee",
-          "meaning": "O Allah, öffne mir die Türen Deiner Barmherzigkeit.",
-          "explanation": "Gebet beim Betreten der Moschee.",
-          "reference": "-"
-        },
-        "id": {
-          "title": "Masuk Masjid",
-          "meaning": "Ya Allah, bukakanlah pintu rahmat-Mu untukku.",
-          "explanation": "Doa saat memasuki masjid.",
-          "reference": "-"
-        },
-        "ja": {
-          "title": "モスクに入るときの祈り",
-          "meaning": "神よ、私にあなたの慈悲の扉を開いてください。",
-          "explanation": "モスクに入るときの祈り。",
-          "reference": "-"
-        },
-        "ko": {
-          "title": "모스크에 들어갈 때의 기도",
-          "meaning": "오, 알라여, 저에게 자비의 문을 열어주소서.",
-          "explanation": "모스크에 들어갈 때 드리는 기도입니다.",
-          "reference": "-"
-        },
-        "tr": {
-          "title": "Mescide Girerken Dua",
-          "meaning": "Allah’ım, rahmet kapılarını benim için aç.",
-          "explanation": "Mescide girerken okunan dua.",
-          "reference": "-"
-        },
-        "uz": {
-          "title": "Masjidga kirishda duo",
-          "meaning": "Ey Allohim, rahmating eshiklarini menga ochgin.",
-          "explanation": "Masjidga kirishda o'qiladi.",
-          "reference": "-"
-        },
-        "kz": {
-          "title": "Мешітке кіргенде дұға",
-          "meaning": "Аллахым, маған мейірім қақпаларын аш.",
-          "explanation": "Мешітке кіргенде айтылатын дұға.",
-          "reference": "-"
-        },
-        "kg": {
-          "title": "Мешитке киргенде кылынчу доо",
-          "meaning": "Эй Падышам, мага мээрим эшиктерин ач.",
-          "explanation": "Мешитке киргениңде окула�� дуо.",
-          "reference": "-"
-        },
-        "ru": {
-          "title": "Вход в мечеть",
-          "meaning": "О, Аллах, открой для меня двери Своей милости.",
-          "explanation": "Молитва при входе в мечеть.",
-          "reference": "-"
-        }
+  {
+    "id": "enter_mosque",
+    "arabic": "اللَّهُمَّ افْتَحْ لِي أَبْوَابَ رَحْمَتِكَ",
+    "transliteration": "Allahummaftha lii abwaaba rahmatik",
+    "audioUrl": "audioUrl",
+    "categoryId": "mosque",
+    "defaultCount": 1,
+    "totalCount": 0,
+    "translations": {
+      "en": {
+        "title": "Entering the Mosque",
+        "meaning": "O Allah, open the doors of Your mercy for me.",
+        "explanation": "Prayer when entering the mosque.",
+        "reference": "-"
+      },
+      "uz": {
+        "title": "Masjidga kirish",
+        "meaning": "Ey Alloh, menga rahmating eshiklarini och.",
+        "explanation": "Masjidga kirayotganida aytiladi.",
+        "reference": "-"
+      },
+      "tr": {
+        "title": "Camiye Giriş",
+        "meaning": "Ya Allah, merhamet kapılarını benim için aç.",
+        "explanation": "Camiye girerken okunur.",
+        "reference": "-"
+      },
+      "ru": {
+        "title": "Вход в мечеть",
+        "meaning": "О, Аллах, открой для меня двери Своей милости.",
+        "explanation": "Молитва при входе в мечеть.",
+        "reference": "-"
       }
     }
-  ]
-  
+  },
+  {
+    "id": "leave_mosque",
+    "arabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ فَضْلِكَ",
+    "transliteration": "Allahumma innii as'aluka min fadhlik",
+    "audioUrl": "audioUrl",
+    "categoryId": "mosque",
+    "defaultCount": 1,
+    "totalCount": 0,
+    "translations": {
+      "en": {
+        "title": "Leaving the Mosque",
+        "meaning": "O Allah, truly I ask You for fadilah.",
+        "explanation": "Prayer when leaving the mosque.",
+        "reference": "HR. Muslim"
+      },
+      "uz": {
+        "title": "Masjiddan chiqish",
+        "meaning": "Ey Alloh, men sening fazlingni so'rayman.",
+        "explanation": "Masjiddan chiqayotganda aytiladi.",
+        "reference": "HR. Muslim"
+      },
+      "tr": {
+        "title": "Camiden Çıkış",
+        "meaning": "Ya Allah, gerçekten Senin fazlını istiyorum.",
+        "explanation": "Camiden çıkarken okunur.",
+        "reference": "HR. Muslim"
+      },
+      "ru": {
+        "title": "Выход из мечети",
+        "meaning": "О, Аллах, я действительно прошу Тебя о милости.",
+        "explanation": "Молитва при выходе из мечети.",
+        "reference": "HR. Muslim"
+      }
+    }
+  },
+  {
+    "id": "enter_bathroom",
+    "arabic": "اَللّٰهُمَّ اِنّىْ اَعُوْذُبِكَ مِنَ الْخُبُثِ وَالْخَبَآئِثِ",
+    "transliteration": "Allahumma innii a'uudzubika minal khubutsi wal khabaaitsi",
+    "audioUrl": "audioUrl",
+    "categoryId": "bathroom",
+    "defaultCount": 1,
+    "totalCount": 0,
+    "translations": {
+      "en": {
+        "title": "Entering the Bathroom",
+        "meaning": "Indeed, I seek protection from You from (the temptations of) male and female devils.",
+        "explanation": "Prayer when entering the bathroom.",
+        "reference": "-"
+      },
+      "uz": {
+        "title": "Hojatxonaga kirish",
+        "meaning": "Albatta, men Sen'dan erkak va ayol shaytonlardan panoh so'rayman.",
+        "explanation": "Hojatxonaga kirayotganda aytiladi.",
+        "reference": "-"
+      },
+      "tr": {
+        "title": "Tuvalete Giriş",
+        "meaning": "Gerçekten, erkek ve dişi şeytanların (temptations) şerrinden sana sığınırım.",
+        "explanation": "Tuvalete girerken okunur.",
+        "reference": "-"
+      },
+      "ru": {
+        "title": "Вход в туалет",
+        "meaning": "Я действительно ищу защиты у Тебя от (искушений) мужских и женских дьяволов.",
+        "explanation": "Молитва при входе в туалет.",
+        "reference": "-"
+      }
+    }
+  },
+  {
+    "id": "after_bathroom",
+    "arabic": "غُفْرَانَكَ",
+    "transliteration": "Ghufranaka",
+    "audioUrl": "audioUrl",
+    "categoryId": "bathroom",
+    "defaultCount": 1,
+    "totalCount": 0,
+    "translations": {
+      "en": {
+        "title": "After Leaving the Bathroom",
+        "meaning": "Hoping for Your forgiveness.",
+        "explanation": "Prayer after leaving the bathroom.",
+        "reference": "-"
+      },
+      "uz": {
+        "title": "Hojatxonadan chiqgandan keyin",
+        "meaning": "Sening mag'firatingni umid qilaman.",
+        "explanation": "Hojatxonadan chiqgandan keyin aytiladi.",
+        "reference": "-"
+      },
+      "tr": {
+        "title": "Tuvaletten Sonra",
+        "meaning": "Senin affını umuyorum.",
+        "explanation": "Tuvaletten çıktıktan sonra okunur.",
+        "reference": "-"
+      },
+      "ru": {
+        "title": "После туалета",
+        "meaning": "Надеюсь на Твое прощение.",
+        "explanation": "Молитва после выхода из туалета.",
+        "reference": "-"
+      }
+    }
+  },
+  {
+    "id": "sneeze_thanks",
+    "arabic": "الْحَمْدُ للهِ",
+    "transliteration": "Alhamdu lillāh",
+    "audioUrl": "audioUrl",
+    "categoryId": "sneeze",
+    "defaultCount": 1,
+    "totalCount": 0,
+    "translations": {
+      "en": {
+        "title": "After Sneezing",
+        "meaning": "All praise is due to Allah.",
+        "explanation": "Prayer when sneezing.",
+        "reference": "-"
+      },
+      "uz": {
+        "title": "Aksirgandan keyingi dua",
+        "meaning": "Butun hamdu sanolar Allohgadir.",
+        "explanation": "Aksirgandan keyin aytiladi.",
+        "reference": "-"
+      },
+      "tr": {
+        "title": "Hapşırmadan Sonra Dua",
+        "meaning": "Tüm övgüler Allah’adır.",
+        "explanation": "Hapşırdıktan sonra söylenir.",
+        "reference": "-"
+      },
+      "ru": {
+        "title": "После Чихания",
+        "meaning": "Вся хвала принадлежит Аллаху.",
+        "explanation": "Молитва после чихания.",
+        "reference": "-"
+      }
+    }
+  },
+  {
+    "id": "sneeze_response_boy",
+    "arabic": "يَرْحَمُكَ اللهُ",
+    "transliteration": "Yarḥamukallāh",
+    "audioUrl": "audioUrl",
+    "categoryId": "sneeze_response",
+    "defaultCount": 1,
+    "totalCount": 0,
+    "translations": {
+      "en": {
+        "title": "Response to a Boy Sneezing",
+        "meaning": "May Allah bestow His mercy upon you.",
+        "explanation": "Response when a boy sneezes.",
+        "reference": "-"
+      },
+      "uz": {
+        "title": "O'g'il bola aksirganda",
+        "meaning": "Alloh sening ustingga rahmatini yog'dirsin.",
+        "explanation": "O'g'il bola aksirganda aytiladi.",
+        "reference": "-"
+      },
+      "tr": {
+        "title": "Bir Erkek Çocuk Hapşırdığında",
+        "meaning": "Allah sana merhamet etsin.",
+        "explanation": "Erkek çocuk hapşırdığında söylenir.",
+        "reference": "-"
+      },
+      "ru": {
+        "title": "Ответ мальчику, который чихнул",
+        "meaning": "Да дарует тебе Аллах свою милость.",
+        "explanation": "Ответ, когда чихает мальчик.",
+        "reference": "-"
+      }
+    }
+  },
+  {
+    "id": "sneeze_response_girl",
+    "arabic": "يَرْحَمُكِ اللّٰه",
+    "transliteration": "Yarhamukillāh",
+    "audioUrl": "audioUrl",
+    "categoryId": "sneeze_response",
+    "defaultCount": 1,
+    "totalCount": 0,
+    "translations": {
+      "en": {
+        "title": "Response to a Girl Sneezing",
+        "meaning": "May Allah bestow His mercy upon you.",
+        "explanation": "Response when a girl sneezes.",
+        "reference": "-"
+      },
+      "uz": {
+        "title": "Qiz bola aksirganda",
+        "meaning": "Alloh sening ustingga rahmatini yog'dirsin.",
+        "explanation": "Qiz bola aksirganda aytiladi.",
+        "reference": "-"
+      },
+      "tr": {
+        "title": "Bir Kız Çocuk Hapşırdığında",
+        "meaning": "Allah sana merhamet etsin.",
+        "explanation": "Kız çocuk hapşırdığında söylenir.",
+        "reference": "-"
+      },
+      "ru": {
+        "title": "Ответ девочке, которая чихнула",
+        "meaning": "Да дарует тебе Аллах свою милость.",
+        "explanation": "Ответ, когда чихает девочка.",
+        "reference": "-"
+      }
+    }
+  },
+  {
+    "id": "after_looking_in_mirror",
+    "arabic": "اَلْحَمْدُ لِلَّهِ اللَّهُمَّ كَمَا حَسَّنْتَ خَلْقِي فَحَسِّنُ خُلُقي",
+    "transliteration": "Alhamdulillaah, allaahumma kamaa hassanta khalqi fahassin khuluqii",
+    "audioUrl": "audioUrl",
+    "categoryId": "mirror",
+    "defaultCount": 1,
+    "totalCount": 0,
+    "translations": {
+      "en": {
+        "title": "Looking in the Mirror",
+        "meaning": "All praise is due to Allah. O Allah, as You have beautified my body, so beautify my morals.",
+        "explanation": "Prayer when you look in the mirror.",
+        "reference": "HR. Ahmad and at-Tirmidhi"
+      },
+      "uz": {
+        "title": "Kichkintoy ko'zga qarash",
+        "meaning": "Butun hamdu sanolar Allohgadir. Ey Alloh, Sen mening tanamni chiroyli qilganingdek, axloqimni ham chiroyli qil.",
+        "explanation": "Kichkintoy ko'zga qaraganda aytiladi.",
+        "reference": "HR. Ahmad va at-Tirmidhi"
+      },
+      "tr": {
+        "title": "Aynaya Bakarken",
+        "meaning": "Tüm övgüler Allah'adır. Ya Allah, bedenimi güzelleştirdiğin gibi, ahlakımı da güzelleştir.",
+        "explanation": "Aynaya bakarken okunur.",
+        "reference": "HR. Ahmad ve at-Tirmidhi"
+      },
+      "ru": {
+        "title": "Смотрясь в Зеркало",
+        "meaning": "Вся хвала принадлежит Аллаху. О, Аллах, как Ты украсил мое тело, так укрась и мои нравы.",
+        "explanation": "Молитва, когда смотришься в зеркало.",
+        "reference": "HR. Ahmad и at-Tirmidhi"
+      }
+    }
+  },
+  {
+    "id": "salvation_dua",
+    "arabic": "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ",
+    "transliteration": "Rabbana aatina fiddunya hasanah wa fil-akhirati hasanah, wa qinaa adzabannaari",
+    "audioUrl": "audioUrl",
+    "categoryId": "salvation",
+    "defaultCount": 1,
+    "totalCount": 0,
+    "translations": {
+      "en": {
+        "title": "Dua for Salvation",
+        "meaning": "Our Lord, give us goodness in this world and the hereafter, and protect us from the torment of hell.",
+        "explanation": "Prayer asking for salvation in the dunya and the akhirah.",
+        "reference": "-"
+      },
+      "uz": {
+        "title": "Najot uchun dua",
+        "meaning": "Ey Rabbimiz, bizga dunyoda va oxiratda yaxshilik ber, va bizni jahannam azobidan saqlang.",
+        "explanation": "Dunyoda va oxiratda najot so'rash uchun dua.",
+        "reference": "-"
+      },
+      "tr": {
+        "title": "Kurtuluş Duası",
+        "meaning": "Ey Rabbimiz, bize bu dünyada ve ahirette iyilik ver ve bizi cehennem azabından koru.",
+        "explanation": "Dünyada ve ahirette kurtuluş istemek için dua.",
+        "reference": "-"
+      },
+      "ru": {
+        "title": "Молитва о Спасении",
+        "meaning": "О, наш Господь, даруй нам благо в этом мире и в вечности, и защити нас от мучений ада.",
+        "explanation": "Молитва о спасении в дунье и ахирете.",
+        "reference": "-"
+      }
+    }
+  },
+  {
+    "id": "parents_prayer",
+    "arabic": "اَللّهُمَّ اغْفِرْلِيْ وَلِوَالِدَيَّ وَارْحَمْهُمَاكَمَارَبَّيَانِيْ صَغِيْرَا",
+    "transliteration": "Allahumma firlii wa liwaa lidhayya warham humaa kamaa rabbayaa nii shaghiraa",
+    "audioUrl": "audioUrl",
+    "categoryId": "parents",
+    "defaultCount": 1,
+    "totalCount": 0,
+    "translations": {
+      "en": {
+        "title": "Prayer for Parents",
+        "meaning": "O my Lord, forgive me and my parents, have mercy on them as they had mercy on me when I was little.",
+        "explanation": "A child's prayer for both parents.",
+        "reference": "-"
+      },
+      "uz": {
+        "title": "Ota-onalar uchun dua",
+        "meaning": "Ey Rabbim, meni va ota-onamni kechir, ularga meni kichikligimda rahmat qilganingdek rahmat qil.",
+        "explanation": "Bola tomonidan ota-onalar uchun dua.",
+        "reference": "-"
+      },
+      "tr": {
+        "title": "Ebeveynler İçin Dua",
+        "meaning": "Ey Rabbim, beni ve ebeveynlerimi affet, onlara beni küçüklüğümde merhamet ettiklerin gibi merhamet et.",
+        "explanation": "Çocukların ebeveynleri için duası.",
+        "reference": "-"
+      },
+      "ru": {
+        "title": "Молитва за Родителей",
+        "meaning": "О, Господи мой, прости меня и моих родителей, помилуй их, как они проявляли ко мне милость, когда я был маленьким.",
+        "explanation": "Молитва ребенка за родителей.",
+        "reference": "-"
+      }
+    }
+  },
+  {
+    "id": "good_partner_offspring",
+    "arabic": "رَبَّنَا هَبْ لَنَا مِنْ اَزْوَاجِنَا وَذُرِّيّٰتِنَا قُرَّةَ اَعْيُنٍ وَّاجْعَلْنَا لِلْمُتَّقِيْنَ اِمَامًا",
+    "transliteration": "Robbana hablanaa min azwaajinaa wa dzurriyyatinaa qurrota a'yun waj'alna lil muttaqiina imaama",
+    "audioUrl": "audioUrl",
+    "categoryId": "family",
+    "defaultCount": 1,
+    "totalCount": 0,
+    "translations": {
+      "en": {
+        "title": "Dua for Good Partner and Offspring",
+        "meaning": "O our Lord, grant us our spouses and our offspring as the delight of (our) hearts, and make us leaders of the pious.",
+        "explanation": "Prayer for a good partner and offspring.",
+        "reference": "-"
+      },
+      "uz": {
+        "title": "Yaxshi juft va avlod uchun dua",
+        "meaning": "Ey Rabbimiz, bizga juftlarimizni va avlodlarimizni ko'z nuri qiling, va bizni taqvalilar et.",
+        "explanation": "Yaxshi juft va bolalar uchun dua.",
+        "reference": "-"
+      },
+      "tr": {
+        "title": "İyi Eş ve Çocuklar İçin Dua",
+        "meaning": "Ey Rabbimiz, bize eşlerimizi ve çocuklarımızı göz aydınlığı kıl ve bizi takva sahiplerinin önderi yap.",
+        "explanation": "İyi eş ve çocuklar için dua.",
+        "reference": "-"
+      },
+      "ru": {
+        "title": "Молитва о Хорошем Партнере и Потомстве",
+        "meaning": "О, наш Господь, даруй нам наших супругов и потомков как радость наших сердец и сделай нас лидерами праведных.",
+        "explanation": "Молитва о хорошем партнере и потомстве.",
+        "reference": "-"
+      }
+    }
+  },
+  {
+    "id": "clothing_thanksgiving",
+    "arabic": "اَلْحَمْدُ لِلَّهِ الَّذِيْ كَسَانِيْ هَذَا (الثَّوْبَ) وَرَزَقَنِيْهِ مِنْ غَيْرِ حَوْلٍ مِنِّيْ وَلَا قُوَّةٍ",
+    "transliteration": "Alhamdulillahi lladzi kasanii haadza (ats-tsauba) wa razaqaniihi min ghairi haulin minnii wa laa quwwah",
+    "audioUrl": "audioUrl",
+    "categoryId": "clothing",
+    "defaultCount": 1,
+    "totalCount": 0,
+    "translations": {
+      "en": {
+        "title": "Prayer While Wearing Clothes",
+        "meaning": "All praise is for Allah who has given me this garment and given it to me without any power or strength from me.",
+        "explanation": "Prayer while wearing clothes.",
+        "reference": "-"
+      },
+      "uz": {
+        "title": "Kiymak paytida dua",
+        "meaning": "Meni bu kiyim bilan ta'minlagan Allohga hamd bo'lsin va menga uni hech qanday kuch va quvvat bilan berilmagan.",
+        "explanation": "Kiymak paytida aytiladi.",
+        "reference": "-"
+      },
+      "tr": {
+        "title": "Kıyafet Giyerken Dua",
+        "meaning": "Bu elbiseyi bana veren ve bana onu hiçbir güç ve kuvvet olmadan veren Allah'a hamdolsun.",
+        "explanation": "Kıyafet giyerken okunur.",
+        "reference": "-"
+      },
+      "ru": {
+        "title": "Молитва при Надевании Одежды",
+        "meaning": "Вся хвала Аллаху, который дал мне эту одежду и дал ее мне без всякой силы и мощи с моей стороны.",
+        "explanation": "Молитва при надевании одежды.",
+        "reference": "-"
+      }
+    }
+  },
+  {
+    "id": "removing_clothes",
+    "arabic": "بِسمِ اللّٰهِ الَّذِي لَا إِلٰهَ اِلَّا هُوَ",
+    "transliteration": "Bismillahil ladzi lailaha illa huwa",
+    "audioUrl": "audioUrl",
+    "categoryId": "clothing",
+    "defaultCount": 1,
+    "totalCount": 0,
+    "translations": {
+      "en": {
+        "title": "When Taking Off Clothes",
+        "meaning": "In the name of Allah, there is no deity except Him.",
+        "explanation": "Prayer when taking off clothes.",
+        "reference": "-"
+      },
+      "uz": {
+        "title": "Kiyimlarni yechish paytida",
+        "meaning": "Allohning nomi bilan, undan boshqa iloh yo'q.",
+        "explanation": "Kiyimlarni yechish paytida aytiladi.",
+        "reference": "-"
+      },
+      "tr": {
+        "title": "Giysileri Çıkarırken",
+        "meaning": "Allah’ın adıyla, O’ndan başka ilah yoktur.",
+        "explanation": "Giysileri çıkarırken okunur.",
+        "reference": "-"
+      },
+      "ru": {
+        "title": "При Снятии Одежды",
+        "meaning": "Во имя Аллаха, нет божества, кроме Него.",
+        "explanation": "Молитва при снятии одежды.",
+        "reference": "-"
+      }
+    }
+  },
+  {
+    "id": "leaving_house",
+    "arabic": "بِسْمِ اللهِ تَوَكَّلْتُ عَلَى اللَّهِ لَاحَوْلَ وَلَا قُوَّةَ الا بالله",
+    "transliteration": "Bismillaahi tawakkaltu 'alal laahi laa haula walaa quwwata illaa billaah(i)",
+    "audioUrl": "audioUrl",
+    "categoryId": "house",
+    "defaultCount": 1,
+    "totalCount": 0,
+    "translations": {
+      "en": {
+        "title": "Prayers When Leaving the House",
+        "meaning": "In the name of Allah, I place my trust in Allah. There is no power to gain benefit and no strength to repel harm except with Allah's help.",
+        "explanation": "Prayers when leaving the house.",
+        "reference": "HR Abu Daud and Tirmizi"
+      },
+      "uz": {
+        "title": "Uydan chiqish paytida dua",
+        "meaning": "Allohning nomi bilan, men Allohga ishonaman, foyda olish uchun kuch yo'q va zararni qaytarish uchun kuch yo'q, faqat Allohning yordami bilan.",
+        "explanation": "Uydan chiqish paytida aytiladi.",
+        "reference": "HR Abu Daud va Tirmizi"
+      },
+      "tr": {
+        "title": "Evden Çıkarken Dua",
+        "meaning": "Allah'ın adıyla, Allah'a güvendim. Fayda sağlamak için güç yoktur ve zararı önlemek için güç yoktur, ancak Allah'ın yardımıyla.",
+        "explanation": "Evden çıkarken okunur.",
+        "reference": "HR Abu Daud ve Tirmizi"
+      },
+      "ru": {
+        "title": "Молитвы При Выходе Из Дома",
+        "meaning": "Во имя Аллаха, я полагаюсь на Аллаха. Нет силы, чтобы получить пользу, и нет силы, чтобы предотвратить вред, кроме как с помощью Аллаха.",
+        "explanation": "Молитвы при выходе из дома.",
+        "reference": "HR Abu Daud и Тирмизи"
+      }
+    }
+  },
+  {
+    "id": "enter_house",
+    "arabic": "اللّٰهُمَّ إنِّي أَسْأَلُكَ خَيْرَ المَوْلِجِ وَ خَيْرَ المَخْرَجِ, بِاسْمِ اللّٰهِ وَ لَجْنَا، بِاسْمِ اللّٰهِ خَرَجْنَا، وَ عَلَى اللّٰهِ رَبِّنَا تَوَكَّلْنَا",
+    "transliteration": "Allahumma innii as-aluka khairal mauliji, bismillahi wa lajnaa, wa bismillahi kharajnaa, wa 'alallahi rabbanaa tawakkalnaa",
+    "audioUrl": "audioUrl",
+    "categoryId": "house",
+    "defaultCount": 1,
+    "totalCount": 0,
+    "translations": {
+      "en": {
+        "title": "Prayer When Entering the House",
+        "meaning": "O Allah, I ask You for the goodness of entering and the goodness of exiting. In the name of Allah, we enter; in the name of Allah, we exit; and upon Allah, our Lord, we place our trust.",
+        "explanation": "Prayer when entering the house.",
+        "reference": "-"
+      },
+      "uz": {
+        "title": "Uyga kirish paytida dua",
+        "meaning": "Ey Alloh, men senga kirish va chiqish yaxshiligini so'rayman. Allohning nomi bilan kiramiz, Allohning nomi bilan chiqamiz, va Allohga ishonamiz.",
+        "explanation": "Uyga kirayotganda aytiladi.",
+        "reference": "-"
+      },
+      "tr": {
+        "title": "Eve Girişte Dua",
+        "meaning": "Ya Allah, girmemizin ve çıkmamızın hayrını istiyorum. Allah'ın adıyla giriyoruz; Allah'ın adıyla çıkıyoruz; ve Rabbimiz Allah'a güveniyoruz.",
+        "explanation": "Eve girerken okunur.",
+        "reference": "-"
+      },
+      "ru": {
+        "title": "Молитва При Входе В Дом",
+        "meaning": "О, Аллах, я прошу Тебя о благости входа и выхода. Во имя Аллаха мы входим; во имя Аллаха мы выходим; и на Аллаха, нашего Господа, мы полагаемся.",
+        "explanation": "Молитва при входе в дом.",
+        "reference": "-"
+      }
+    }
+  },
+  {
+    "id": "waking_up",
+    "arabic": "اَلْحَمْدُ لِلَّهِ الَّذِيْ أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُوْرِ",
+    "transliteration": "Alhamdullillahilladzi ahyaanaa ba'da maa amaatanaa wa ilaihin nusyuur",
+    "audioUrl": "audioUrl",
+    "categoryId": "waking_up",
+    "defaultCount": 1,
+    "totalCount": 0,
+    "translations": {
+      "en": {
+        "title": "Prayer When Waking Up",
+        "meaning": "All praise is due to Allah, who has brought us to life after causing us to die, and to Him is the resurrection.",
+        "explanation": "Prayer when waking up.",
+        "reference": "-"
+      },
+      "uz": {
+        "title": "Uyg'onganda aytiladigan dua",
+        "meaning": "Butun hamdu sanolar Allohgadir, u bizni o'ldirgandan keyin tiriltirgan va unga qaytishimizdir.",
+        "explanation": "Uyg'onganda aytiladi.",
+        "reference": "-"
+      },
+      "tr": {
+        "title": "Uyanınca Okunan Dua",
+        "meaning": "Tüm övgüler Allah'adır, bizi öldürdükten sonra dirilten ve O'na dönüş olacaktır.",
+        "explanation": "Uyanınca okunur.",
+        "reference": "-"
+      },
+      "ru": {
+        "title": "Молитва При Пробуждении",
+        "meaning": "Вся хвала принадлежит Аллаху, который оживил нас после смерти, и к Нему будет воскрешение.",
+        "explanation": "Молитва при пробуждении.",
+        "reference": "-"
+      }
+    }
+  },
+  {
+    "id": "after_eating",
+    "arabic": "الْحَمْدُ لِلَّهِ الَّذِي أَطْعَمَنَا وَسَقَانَا وَجَعَلَنَا مِنَ الْمُسْلِمِينَ",
+    "transliteration": "Alhamdu lillaahil-ladzii ath'amanaa wa saqaanaa wa ja'alanaa minal-muslimiin",
+    "audioUrl": "audioUrl",
+    "categoryId": "eating",
+    "defaultCount": 1,
+    "totalCount": 0,
+    "translations": {
+      "en": {
+        "title": "Prayer After Eating",
+        "meaning": "All praise is due to Allah who has fed us and given us drink and has made us among the Muslims.",
+        "explanation": "Prayer after eating.",
+        "reference": "-"
+      },
+      "uz": {
+        "title": "Ovqatdan keyin",
+        "meaning": "Butun hamdu sanolar Allohgadir, u bizni ovqatlantirgan va ichirgan va bizni musulmonlardan qilgan.",
+        "explanation": "Ovqatdan keyin aytiladi.",
+        "reference": "-"
+      },
+      "tr": {
+        "title": "Yemekten Sonra Dua",
+        "meaning": "Tüm övgüler Allah'adır, bizi doyuran ve içiren ve bizi Müslümanlardan yapan.",
+        "explanation": "Yemekten sonra okunur.",
+        "reference": "-"
+      },
+      "ru": {
+        "title": "Молитва После Еды",
+        "meaning": "Вся хвала принадлежит Аллаху, который накормил нас и напоил нас и сделал нас мусульманами.",
+        "explanation": "Молитва после еды.",
+        "reference": "-"
+      }
+    }
+  },
+  {
+    "id": "not_lazy",
+    "arabic": "اَللّٰهُمَّ اِنِّى اَعُوْذُ بِكَ مِنَ الْهَـمِّ وَالْحَزَنِ وَاَعُوْذُبِكَ مِنَ الْعَجْـِز وَاْلكَسَلِ .وَاَعُوْذُبِكَ مِنَ الْجُـبْنِ وَالْبُخْـلِ وَاَعُوْذُبِكَ مِنْ غَلَبَتِ الدَّيْنِ وَقَـهْرِ الرِّجَالِ",
+    "transliteration": "Allohumma innii a'uudzubika minal hammi wal hazani wa a'uudzubika minal 'ajzi walkasali, wa a'uudzubika minal jubni wa bukhli, wa a'uudzubika min gholabatid-daini wa qohrirrijaal",
+    "audioUrl": "audioUrl",
+    "categoryId": "not_lazy",
+    "defaultCount": 1,
+    "totalCount": 0,
+    "translations": {
+      "en": {
+        "title": "Prayer Not to Be Lazy",
+        "meaning": "O Allah, I seek refuge in You from anxiety and sorrow, I seek refuge in You from weakness and laziness, I seek refuge in You from cowardice and stinginess, and I seek refuge in You from the burden of debt and the oppression of men.",
+        "explanation": "Prayer not to be lazy.",
+        "reference": "HR Abu Dawud"
+      },
+      "uz": {
+        "title": "Sakinchak bo'lmaslik uchun dua",
+        "meaning": "Ey Alloh, men Senga g'am-tashvish va qayg'udan panoh so'rayman, men Senga zaiflik va dangasalikdan panoh so'rayman, men Senga qo'rqoqlik va kikirlikdan panoh so'rayman, va men Senga qarzning yukidan va odamlarning zulmidan panoh so'rayman.",
+        "explanation": "Sakinchak bo'lmaslik uchun dua.",
+        "reference": "HR Abu Dawud"
+      },
+      "tr": {
+        "title": "Tembellikten Kaçınmak İçin Dua",
+        "meaning": "Ey Allah, ben sana kaygıdan ve üzüntüden sığınırım, zayıflıktan ve tembellikten sığınırım, korkaklıktan ve cimrilikten sığınırım, borç yükünden ve insanların zulmünden sığınırım.",
+        "explanation": "Tembellikten kaçınmak için dua.",
+        "reference": "HR Abu Dawud"
+      },
+      "ru": {
+        "title": "Молитва Против Лени",
+        "meaning": "О, Аллах, я ищу защиты у Тебя от тревоги и печали, я ищу защиты у Тебя от слабости и лени, я ищу защиты у Тебя от трусости и скупости, и я ищу защиты у Тебя от бремени долга и угнетения людей.",
+        "explanation": "Молитва против лени.",
+        "reference": "HR Abu Dawud"
+      }
+    }
+  }
+]
